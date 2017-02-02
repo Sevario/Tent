@@ -1,5 +1,7 @@
 <?php
 
+//OPSLAGTENT
+
 if (!empty($_POST['adviescheck'])) {
     echo "Breedte: " . $_POST['adviesbreedte'];
     echo "<br>";
@@ -86,3 +88,6 @@ if ( !empty($_POST['ondergrond'])) {
     
 }
 
+
+
+//
