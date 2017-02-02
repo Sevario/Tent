@@ -47,9 +47,9 @@
                         <option value="100 Meter">100</option>
                     </select><br>
                     <label>
-                     <input class="advies" type="checkbox" value="advies" /> Mijn maat staat er niet tussen, ik wil graag advies. 
+                        <input class="advies" type="checkbox" name="adviescheck" value="advies" /> Mijn maat staat er niet tussen, ik wil graag advies. 
                      <div class="advieschecked" style="display: none;">
-                            Breedte:<input class="adviesbreedte" type="text" name="advieslengte"/>
+                            Breedte:<input class="adviesbreedte" type="text" name="adviesbreedte"/>
                             Lengte: <input class="advieslengte" type="text" name="advieslengte"/>
                      </div>
                     <label>

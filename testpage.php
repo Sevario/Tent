@@ -1,16 +1,25 @@
 <?php
 
-if ( !empty($_POST['breedte'])) {
-    
-    echo "Breedte: " . $_POST['breedte'];
+if (!empty($_POST['adviescheck'])) {
+    echo "Breedte: " . $_POST['adviesbreedte'];
     echo "<br>";
-    
+    echo "Lengte: " . $_POST['advieslengte'];
 }
 
-if ( !empty($_POST['lengte'])) {
-    
-    echo "Lengte: " . $_POST['lengte'];
-    echo "<br>";
+ else {
+    if ( !empty($_POST['breedte'])) {
+
+        echo "Breedte: " . $_POST['breedte'];
+        echo "<br>";
+
+    }
+
+    if ( !empty($_POST['lengte'])) {
+
+        echo "Lengte: " . $_POST['lengte'];
+        echo "<br>";
+    }   
+
 }
 
 if ( !empty($_POST['zijwanden'])) {
