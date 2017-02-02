@@ -1,10 +1,16 @@
 <?php
 
-
 if ( !empty($_POST['breedte'])) {
     
-    echo $_POST['breedte'];
+    echo "Breedte: " . $_POST['breedte'];
+    echo "<br>";
     
+}
+
+if ( !empty($_POST['lengte'])) {
+    
+    echo "Lengte: " . $_POST['lengte'];
+    echo "<br>";
 }
 
 if ( !empty($_POST['zijwanden'])) {
@@ -41,8 +47,9 @@ if (!empty($_POST['geendeur'])) {
         $deuren = "Geen Deuren";
         
 }
+if ($deuren != "Deuren: "){
 echo $deuren . "<br>";
-
+}
 //OPTIES CHECK
 $opties  = "Opties: ";
 
@@ -59,7 +66,9 @@ if ( !empty($_POST['geenopties'])) {
     $opties = "Geen Opties";
 }
 
+if ($opties != "Opties: ") {
 echo $opties . "<br>";
+}
 
 
 if ( !empty($_POST['ondergrond'])) {
