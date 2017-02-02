@@ -9,7 +9,25 @@
     </head>
     <body>
         <h1>Stretchtent</h1>
-        <form>
-        </form>
+            <form>
+                <div class="vlonders">
+                    <label>1. Vlonders</label>
+                    <label>
+                        <input type="text" id="vlonders" name="vloer" style="width: 50px;"/>m²
+                    </label>
+                </div>
+                <div class="checkhide">
+                    <label>2. Leggen</label><br>
+                    <label>
+                        <input type="checkbox" id="leggen"  name="leggen"/>
+                        <label class="checkbox" for="leggen"><img src="img/geen.svg" /></label>
+                        <p>Gelegd</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="ongelegd" name="leggen" />
+                        <label class="checkbox" for="ongelegd"><img src="img/geen.svg" /></label>
+                        <p>Ongelegd</p>
+                    </label>
+                </div>
     </body>
 </html>
