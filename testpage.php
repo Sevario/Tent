@@ -2,6 +2,7 @@
 
 //OPSLAGTENT
 
+echo "<h1>Opslag Tent</h1><br>";
 if (!empty($_POST['adviescheck'])) {
     echo "Breedte: " . $_POST['adviesbreedte'];
     echo "<br>";
