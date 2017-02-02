@@ -89,6 +89,10 @@ if ( !empty($_POST['ondergrond'])) {
     
 }
 
+if (!empty($_POST['haringen'])) {
+echo "<br> Er kunnen geen haringen geslagen worden.";
+}
+
 
 
 //
