@@ -29,5 +29,61 @@
                         <p>Ongelegd</p>
                     </label>
                 </div>
+                <div class="checkhide">
+                    <label>3. Transport</label><br>
+                    <label>
+                        <input type="checkbox" id="bezorgen" name="transport"/>
+                        <label class="checkbox" for="bezorgen"><img src="img/bezorgen.svg" /></label>
+                        <p>Bezorgen</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="afhalen" name="transport"/>
+                        <label class="checkbox" for="afhalen"><img src="img/afhalen.svg" /></label>
+                        <p>Afhalen</p>
+                    </label>
+                </div>
+                <div class="checkhide">
+                    <label>4. Ondergrond</label><br>
+                    <label>
+                        <input type="checkbox" id="stenenstraat" name="straat"/>
+                        <label class="checkbox" for="stenenstraat"><img src="img/stenen_straat.svg" /></label>
+                        <p>Stenen straat</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="asfalt" name="straat"/>
+                        <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
+                        <p>Asfalt</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="gras" name="straat"/>
+                        <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
+                        <p>Gras</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="grind" name="straat"/>
+                        <label class="checkbox" for="grind"><img src="img/grind.svg" /></label>
+                        <p>Grind</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="beton" name="straat"/>
+                        <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
+                        <p>Beton</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="strand" name="straat"/>
+                        <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
+                        <p>Strand</p>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen">
+                        Er kunnen geen haringen geslagen worden.<br>
+                    </label><br>
+                    <label>
+                        Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een tent <input type="submit" name="toevoegen" value="toevoegen">?
+                    </label>
+                </div>
+            </form>
     </body>
 </html>
