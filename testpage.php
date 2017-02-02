@@ -88,7 +88,9 @@ if ( !empty($_POST['ondergrond'])) {
     echo "Ondergrond: " . $_POST['ondergrond'];
     
 }
-
+if (!empty($_POST['haringen'])) {
+    echo "<br> Er kunnen geen haringen geslagen worden.";
+}
 //Festival vloer
 
 echo "<h1>Festival vloer</h1><br>";
