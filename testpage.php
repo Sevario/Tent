@@ -89,6 +89,31 @@ if ( !empty($_POST['ondergrond'])) {
     
 }
 
+//Festival vloer
+
+echo "<h1>Festival vloer</h1><br>";
+if (!empty($_POST['vloer'])) {
+    echo "Vlonders: " . $_POST['vloer'] . " m²" . "<br>";
+}
+
+if ( !empty($_POST['leggen'])) {
+
+    echo "Leggen: " . $_POST['leggen'] . "<br>";
+
+}
+
+if ( !empty($_POST['transport'])) {
+
+    echo "Transport: " . $_POST['transport'] . "<br>";
+
+}
+
+if ( !empty($_POST['straat'])) {
+
+    echo "Ondergrond: " . $_POST['straat'];
+
+}
 
 
-//
+
+
