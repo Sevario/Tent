@@ -54,89 +54,89 @@
                      </div>
                     <label>
                 </div>
-            <div class="checkhide">
+            <div class="checkhide" >
                 <label>2. Zijwanden</label><br>
                 <label>
-                    <input type="checkbox" id="zeil" name="zijwanden" value="Zeil"/>
+                    <input class='opslagwanden' type="checkbox" id="zeil" name="zijwanden" value="Zeil"/>
                     <label class="checkbox" for="zeil"><img src="img/zeil.svg" /></label>
                     <p>Zeil</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="sandwichpanelen" name="zijwanden" value="Sandwich Panelen"/>
+                    <input class='opslagwanden' type="checkbox" id="sandwichpanelen" name="zijwanden" value="Sandwich Panelen"/>
                     <label class="checkbox" for="sandwichpanelen"><img src="img/sandwichpanelen.svg" /></label>
                     <p>Sandwich Panelen</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="damwand" name="zijwanden" value="Dam Wand"/>
+                    <input class='opslagwanden' type="checkbox" id="damwand" name="zijwanden" value="Dam Wand"/>
                     <label class="checkbox" for="damwand"><img src="img/dam_wand.svg" /></label>
                     <p>Dam Wand</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="opslagdeuren" style="display: none;">
                 <label>3. Deuren</label><br>
                 <label>
-                    <input type="checkbox" id="roldeur" name="rol_deur" value="Roldeur"/>
+                    <input class='opslagdeuren' type="checkbox" id="roldeur" name="rol_deur" value="Roldeur"/>
                     <label class="checkbox" for="roldeur"><img src="img/roldeur.svg" /></label>
                     <p>Roldeur</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="overhead" name="overhead_deur" value="Overhead Deur"/>
+                    <input class='opslagdeuren' type="checkbox" id="overhead" name="overhead_deur" value="Overhead Deur"/>
                     <label class="checkbox" for="overhead"><img src="img/overhead_deur.svg" /></label>
                     <p>Overhead Deur</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="enkeledeur" name="enkele_entree_deur" value="Enkele Entreedeur"/>
+                    <input class='opslagdeuren' type="checkbox" id="enkeledeur" name="enkele_entree_deur" value="Enkele Entreedeur"/>
                     <label class="checkbox" for="enkeledeur"><img src="img/enkele_entree_deur.svg" /></label>
                     <p>Enkele Entreedeur</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="dubbeledeur" name="dubbele_entree_deur" value="Dubbele Entreedeur"/>
+                    <input class='opslagdeuren' type="checkbox" id="dubbeledeur" name="dubbele_entree_deur" value="Dubbele Entreedeur"/>
                     <label class="checkbox" for="dubbeledeur"><img src="img/geen.svg" /></label>
                     <p>Dubbele Entreedeur</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geendeur" name ="geendeur" value="Geen Deur"/>
+                    <input class='opslagdeuren' type="checkbox" id="geendeur" name ="geendeur" value="Geen Deur"/>
                     <label class="checkbox" for="geendeur"><img src="img/geen.svg" /></label>
                     <p>Geen Deur</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id='opslagopties' style="display: none;">
                 <label>4. Opties</label><br>
                 <label>
-                    <input type="checkbox" id="verlichting" name="verlichting" value="Verlichting"/>
+                    <input class='opslagopties' type="checkbox" id="verlichting" name="verlichting" value="Verlichting"/>
                     <label class="checkbox" for="verlichting"><img src="img/geen.svg" /></label>
                     <p>Verlichting</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="verwarming" name="verwarming" value="Verwarming"/>
+                    <input class='opslagopties' type="checkbox" id="verwarming" name="verwarming" value="Verwarming"/>
                     <label class="checkbox" for="verwarming"><img src="img/geen.svg" /></label>
                     <p>Verwarming</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="systeemvloer" name="systeemvloer" value="Systeem Vloer"/>
+                    <input class='opslagopties' type="checkbox" id="systeemvloer" name="systeemvloer" value="Systeem Vloer"/>
                     <label class="checkbox" for="systeemvloer"><img src="img/systeemvloer.svg" /></label>
                     <p>Systeem Vloer</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geenopties" name="geenopties" value="Geen Opties"/>
+                    <input class='opslagopties' type="checkbox" id="geenopties" name="geenopties" value="Geen Opties"/>
                     <label class="checkbox" for="geenopties"><img src="img/geen.svg" /></label>
                     <p>Geen</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id='opslagondergrond' style="display: none;">
                 <label>5. Ondergrond</label><br>
                 <label>
-                    <input type="checkbox" id="stenenstraat" name="ondergrond" value="Stenen Straat"/>
+                    <input class='opslagondergrond' type="checkbox" id="stenenstraat" name="ondergrond" value="Stenen Straat"/>
                     <label class="checkbox" for="stenenstraat"><img src="img/stenen_straat.svg" /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="asfalt" name="ondergrond" value="Asfalt"/>
+                    <input class='opslagondergrond' type="checkbox" id="asfalt" name="ondergrond" value="Asfalt"/>
                     <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="gras" name="ondergrond" value="Gras"/>
+                    <input class='opslagondergrond' type="checkbox" id="gras" name="ondergrond" value="Gras"/>
                     <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
                     <p>Gras</p>
                 </label>
@@ -146,23 +146,25 @@
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="beton" name="ondergrond" value="Beton"/>
+                    <input class='opslagondergrond' type="checkbox" id="beton" name="ondergrond" value="Beton"/>
                     <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="strand" name="ondergrond" value="Strand"/>
+                    <input class='opslagondergrond' type="checkbox" id="strand" name="ondergrond" value="Strand"/>
                     <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
                     <p>Strand</p>
                 </label><br>
             </div>
-            <div>
+            <div id='haringen' style="display: none;">
                 <label>
                      <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen" />
                      Er kunnen geen haringen geslagen worden.
                 <label>
             </div>
-            <input class="submitbutton" type="submit" value="Submit">
+                <label>
+                    Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een tent <input type="submit" name="toevoegen" value="toevoegen">?
+                </label>
         </form>
     </body>
 </html>

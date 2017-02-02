@@ -15,6 +15,25 @@ $(document).ready(function() {
     
     });
     
+    //Opslagtent
+    
+    //Show 3 when 2 is selected
+    $('input.opslagwanden').on('change', function() {
+        $('#opslagdeuren').show('fast');
+    });
+    //Show 4 when 3 is selected
+        $('input.opslagdeuren').on('change', function() {
+        $('#opslagopties').show('fast');
+    });
+     //Show 5 when 4 is selected
+        $('input.opslagopties').on('change', function() {
+        $('#opslagondergrond').show('fast');
+    });     
+    //Show haringen when 5 is selected
+        $('input.opslagondergrond').on('change', function() {
+        $('#haringen').show('fast');
+    });
+    
     
     //Show advies input if box checked
     $('.advies').click(function() {
