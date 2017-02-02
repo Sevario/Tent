@@ -77,7 +77,7 @@
                 </div>
                 <div>
                     <label>
-                        <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen">
+                        <input class="geenharingen" type="checkbox" name="haringen_festival" value="geenharingen">
                         Er kunnen geen haringen geslagen worden.<br>
                     </label><br>
                     <label>

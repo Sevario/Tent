@@ -116,6 +116,9 @@ if ( !empty($_POST['straat'])) {
 
 }
 
+if (!empty($_POST['haringen_festival'])) {
+    echo "<br> Er kunnen geen haringen geslagen worden.";
+}
 
 
 
