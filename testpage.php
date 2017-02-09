@@ -28,8 +28,8 @@ if (!empty($_POST['adviescheck'])) {
 if ( !empty($_POST['zijwanden'])) {
     
     echo "Zijwanden: " . $_POST['zijwanden'] . "<br>";
-    
 }
+
 
 //DEUREN CHECK
 $deuren = "Deuren: ";

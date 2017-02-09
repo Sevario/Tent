@@ -29,10 +29,12 @@ $(document).ready(function() {
         $('input.opslagopties').on('change', function() {
         $('#opslagondergrond').show('fast');
     });     
-    //Show haringen when 5 is selected
+    //Show haringen/versturen when 5 is selected
         $('input.opslagondergrond').on('change', function() {
         $('#haringen').show('fast');
+        $('#opslagversturen').show('fast');
     });
+    
     
     
     //Show advies input if box checked
