@@ -45,10 +45,6 @@ $(document).ready(function() {
         $('input.transport').on('change', function() {
         $('#festivalgrond').show('fast');
     });
-     //Show 5 when 4 is selected
-        $('input.opslagopties').on('change', function() {
-        $('#opslagondergrond').show('fast');
-    });     
     //Show haringen/versturen when 5 is selected
         $('input.straat').on('change', function() {
         $('#festivalharing').show('fast');
