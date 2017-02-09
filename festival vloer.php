@@ -8,7 +8,7 @@
         <title></title>
     </head>
     <body>
-        <h1>Stretchtent</h1>
+        <h1>Festival vloer</h1>
             <form action="testpage.php" method="post">
                 <div class="vlonders">
                     <label>1. Vlonders</label>
