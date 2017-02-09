@@ -14,19 +14,19 @@
                 
                 <script>
                     $(document).ready(function() {
-                        $(".formopslag").load("ajax/ajax_opslagtent.php");
+                        $(".form1").load("ajax/ajax_opslagtent.php");
                     });
                 </script>                    
-                <div class="formopslag"></div>
-                <div class="formfestival"></div>
-                <div class="formleger"></div>
+                <div class="formadd">
+                <div class="form1"></div>
+                </div>
                 
                 
                 Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een 
                 
                     <select class="dropdownmenu">
                         <option>Selecteer de nieuwe tent</option>
-                        <?php if (!empty($opslag)) {
+                        <?php if (empty($opslag)) {
                         echo "<option value='opslag'>Opslagtent</option>";
                         }
                         if (empty($festival)) {

@@ -3,21 +3,19 @@ $(document).ready(function() {
     $('.matenform').show();
     $('.aantal').hide();
 
-    function isEmpty( el ){
-        return !$.trim(el.html());
-    }
-    
-    $('.newtent').click(function() {
-        var newtent = $( ".dropdownmenu option:checked" ).val();
-
-            if (newtent==="festival") {
-                $(".formfestival").load("ajax/ajax_festival_vloer.php");
-            }
-
-            if (newtent==="leger") {
-                $(".formleger").load("ajax/ajax_legertent.php");
-            }
+    var counter =2;
+    $('.newtent').on("click", function() {
+//        var newtent = $( ".dropdownmenu option:checked" ).val();
         
+//            if (newtent==="festival") {
+                $( ".formadd" ).append( "<div class='form2'></div>" );
+//                $(".form"+counter).load("ajax/ajax_festival_vloer.php");
+//                counter++;
+//            }
+
+//            if (newtent==="leger") {
+//                $(".form2").load("ajax/ajax_legertent.php");
+//            }
         
     });
 

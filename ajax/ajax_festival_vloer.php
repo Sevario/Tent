@@ -8,6 +8,7 @@
         <title></title>
     </head>
     <body>
+        <?php $festival = "yes"; ?>
         <h1>Festival Vloer</h1>
                 <div class="vlonders">
                     <label>1. Vlonders</label>
