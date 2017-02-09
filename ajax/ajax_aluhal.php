@@ -50,98 +50,98 @@
             <div class="checkhide">
                 <label>2. Vloer</label><br>
                 <label>
-                    <input type="checkbox" id="vlonders" name="vloeren"/>
-                    <label class="checkbox" for="vlonders"><img src="img/vlonders.svg" /></label>
+                    <input class="alu_vloer" type="checkbox" id="alu_vlonders" name="alu_vloeren"/>
+                    <label class="checkbox" for="alu_vlonders"><img src="img/vlonders.svg" /></label>
                     <p>Vlonders</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="systeemvloer" name="vloeren"/>
-                    <label class="checkbox" for="systeemvloer"><img src="img/systeemvloer.svg" /></label>
+                    <input class="alu_vloer" type="checkbox" id="alu_systeemvloer" name="alu_vloeren"/>
+                    <label class="checkbox" for="alu_systeemvloer"><img src="img/systeemvloer.svg" /></label>
                     <p>Systeemvloer</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geenvloer" name="vloeren"/>
-                    <label class="checkbox" for="geenvloer"><img src="img/geen.svg" /></label>
+                    <input class="alu_vloer" type="checkbox" id="alu_geenvloer" name="alu_vloeren"/>
+                    <label class="checkbox" for="alu_geenvloer"><img src="img/geen.svg" /></label>
                     <p>Geen Vloer</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="alu_opties" style='display: none;'>
                 <label>3. Opties</label><br>
                 <label>
-                    <input type="checkbox" id="hardewanden" name="opties"/>
-                    <label class="checkbox" for="hardewanden"><img src="img/geen.svg" /></label>
+                    <input class="alu_opties" type="checkbox" id="alu_hardewanden" name="alu_opties"/>
+                    <label class="checkbox" for="alu_hardewanden"><img src="img/geen.svg" /></label>
                     <p>Harde Wanden</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="glaswand" name="opties"/>
-                    <label class="checkbox" for="glaswand"><img src="img/geen.svg" /></label>
+                    <input class="alu_opties" type="checkbox" id="alu_glaswand" name="alu_opties"/>
+                    <label class="checkbox" for="alu_glaswand"><img src="img/geen.svg" /></label>
                     <p>Glaswand per meter</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="bankirai" name="opties"/>
-                    <label class="checkbox" for="bankirai"><img src="img/geen.svg" /></label>
+                    <input class="alu_opties" type="checkbox" id="alu_bankirai" name="alu_opties"/>
+                    <label class="checkbox" for="alu_bankirai"><img src="img/geen.svg" /></label>
                     <p>Bankirai Terrastegels</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="antraciet" name="opties"/>
-                    <label class="checkbox" for="antraciet"><img src="img/geen.svg" /></label>
+                    <input class="alu_opties" type="checkbox" id="alu_antraciet" name="alu_opties"/>
+                    <label class="checkbox" for="alu_antraciet"><img src="img/geen.svg" /></label>
                     <p>Antracie Tapijttegels</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="alu_toeb" style='display: none;'>
                 <label>4. Toebehoren</label><br>
                 <label>
-                    <input type="checkbox" id="brandblusser"/>
-                    <label class="checkbox" for="brandblusser"><img src="img/brandblusser.svg" /></label>
+                    <input class="alu_toeb" type="checkbox" id="alu_brandblusser"/>
+                    <label class="checkbox" for="alu_brandblusser"><img src="img/brandblusser.svg" /></label>
                     <p>Brandblusser</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="noodverlichting"/>
-                    <label class="checkbox" for="noodverlichting"><img src="img/noodverlichting.svg" /></label>
+                    <input class="alu_toeb" type="checkbox" id="alu_noodverlichting"/>
+                    <label class="checkbox" for="alu_noodverlichting"><img src="img/noodverlichting.svg" /></label>
                     <p>Noodverlichting</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="heater" name="opties"/>
-                    <label class="checkbox" for="heater"><img src="img/heater.svg" /></label>
+                    <input class="alu_toeb" type="checkbox" id="alu_heater" name="opties"/>
+                    <label class="checkbox" for="alu_heater"><img src="img/heater.svg" /></label>
                     <p>Heater</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="alu_grond" style='display: none;'>
                 <label>5. Ondergrond</label><br>
                 <label>
-                    <input type="checkbox" id="stenenstraat" name="ondergrond"/>
-                    <label class="checkbox" for="stenenstraat"><img src="img/stenen_straat.svg" /></label>
+                    <input class="alu_grond" type="checkbox" id="alu_stenenstraat" name="alu_ondergrond"/>
+                    <label class="checkbox" for="alu_stenenstraat"><img src="img/stenen_straat.svg" /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="asftalt" name="ondergrond"/>
-                    <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
+                    <input class="alu_grond" class="alu_grond" type="checkbox" id="alu_asfalt" name="alu_ondergrond"/>
+                    <label class="checkbox" for="alu_asfalt"><img src="img/asfalt.svg" /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="gras" name="ondergrond"/>
-                    <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
+                    <input class="alu_grond" type="checkbox" id="alu_gras" name="alu_ondergrond"/>
+                    <label class="checkbox" for="alu_gras"><img src="img/gras.svg" /></label>
                     <p>Gras</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="grind" name="ondergrond"/>
-                    <label class="checkbox" for="grind"><img src="img/grind.svg" /></label>
+                    <input class="alu_grond" type="checkbox" id="alu_grind" name="alu_ondergrond"/>
+                    <label class="checkbox" for="alu_grind"><img src="img/grind.svg" /></label>
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="beton" name="ondergrond"/>
-                    <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
+                    <input class="alu_grond" type="checkbox" id="alu_beton" name="alu_ondergrond"/>
+                    <label class="checkbox" for="alu_beton"><img src="img/beton.svg" /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="strand" name="ondergrond"/>
-                    <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
+                    <input class="alu_grond" type="checkbox" id="alu_strand" name="alu_ondergrond"/>
+                    <label class="checkbox" for="alu_strand"><img src="img/strand.svg" /></label>
                     <p>Strand</p>
                 </label><br>
             </div>
-            <div>
+            <div id="alu_haring" style='display: none;'>
                 <label>
-                     <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen" />
+                     <input class="geenharingen" type="checkbox" name="alu_haringen" value="geenharingen" />
                      Er kunnen geen haringen geslagen worden.
                 <label>
             </div>

@@ -25,94 +25,94 @@
             <div class="checkhide">
                 <label>2. Vloer</label><br>
                 <label>
-                    <input type="checkbox" id="vlonders" name="vloeren"/>
+                    <input class="legervloer" type="checkbox" id="vlonders" name="vloeren"/>
                     <label class="checkbox" for="vlonders"><img src="img/vlonders.svg" /></label>
                     <p>Vlonders</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="zeil" name="vloeren"/>
+                    <input class="legervloer" type="checkbox" id="zeil" name="vloeren"/>
                     <label class="checkbox" for="zeil"><img src="img/zeil.svg" /></label>
                     <p>Zeil</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geenvloer" name="vloeren"/>
+                    <input  class="legervloer"type="checkbox" id="geenvloer" name="vloeren"/>
                     <label class="checkbox" for="geenvloer"><img src="img/geen.svg" /></label>
                     <p>Geen Vloer</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="legerafbouw" style='display: none;'>
                 <label>3. Op/Afbouw</label><br>
                 <label>
-                    <input type="checkbox" id="opafbouwja" name="op_afbouw"/>
+                    <input class="legerafbouw" type="checkbox" id="opafbouwja" name="op_afbouw"/>
                     <label class="checkbox" for="opafbouwja"><img src="img/op_afbouw.svg" /></label>
                     <p>Op/Afbouw</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="opafbouwnee" name="op_afbouw"/>
+                    <input class="legerafbouw" type="checkbox" id="opafbouwnee" name="op_afbouw"/>
                     <label class="checkbox" for="opafbouwnee"><img src="img/geen.svg" /></label>
                     <p>Geen Op/Afbouw</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="legertoeb" style='display: none;'>
                 <label>4. Toebehoren</label><br>
                 <label>
-                    <input type="checkbox" id="veldbed"/>
+                    <input class="legertoeb" type="checkbox" id="veldbed"/>
                     <label class="checkbox" for="veldbed"><img src="img/veldbed.svg" /></label>
                     <p>Veldbed</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="slaapzak"/>
+                    <input class="legertoeb" type="checkbox" id="slaapzak"/>
                     <label class="checkbox" for="slaapzak"><img src="img/slaapzak.svg" /></label>
                     <p>Slaapzak</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="legertransport" style='display: none;'>
                 <label>5. Transport</label><br>
                 <label>
-                    <input type="checkbox" id="bezorgen" name="transport"/>
+                    <input class="legertransport" type="checkbox" id="bezorgen" name="transport"/>
                     <label class="checkbox" for="bezorgen"><img src="img/bezorgen.svg" /></label>
                     <p>Bezorgen</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="afhalen" name="transport"/>
+                    <input class="legertransport" type="checkbox" id="afhalen" name="transport"/>
                     <label class="checkbox" for="afhalen"><img src="img/afhalen.svg" /></label>
                     <p>Afhalen</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" id="legerstraat" style='display: none;'>
                 <label>6. Ondergrond</label><br>
                 <label>
-                    <input type="checkbox" id="stenenstraat" name="ondergrond"/>
+                    <input class="legerstraat" type="checkbox" id="stenenstraat" name="ondergrond"/>
                     <label class="checkbox" for="stenenstraat"><img src="img/stenen_straat.svg" /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="asftalt" name="ondergrond"/>
+                    <input class="legerstraat" type="checkbox" id="asftalt" name="ondergrond"/>
                     <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="gras" name="ondergrond"/>
+                    <input class="legerstraat" type="checkbox" id="gras" name="ondergrond"/>
                     <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
                     <p>Gras</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="grind" name="ondergrond"/>
+                    <input class="legerstraat" type="checkbox" id="grind" name="ondergrond"/>
                     <label class="checkbox" for="grind"><img src="img/grind.svg" /></label>
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="beton" name="ondergrond"/>
+                    <input class="legerstraat" type="checkbox" id="beton" name="ondergrond"/>
                     <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="strand" name="ondergrond"/>
+                    <input class="legerstraat" type="checkbox" id="strand" name="ondergrond"/>
                     <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
                     <p>Strand</p>
                 </label><br>
             </div>
-            <div>
+            <div id="legerharing" style='display: none;'>
                 <label>
                      <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen" />
                      Er kunnen geen haringen geslagen worden.

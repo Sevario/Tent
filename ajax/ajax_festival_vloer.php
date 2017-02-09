@@ -13,7 +13,7 @@
                 <div class="vlonders">
                     <label>1. Vlonders</label>
                     <label>
-                        <input type="text" id="vlonders" name="vloer" style="width: 50px;"/>m²
+                        <input type="text" id="festival_vlonders" name="vloer" style="width: 50px;"/>m²
                     </label>
                 </div>
                 <div class="checkhide">

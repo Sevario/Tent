@@ -50,6 +50,39 @@ $(document).ready(function() {
         $('#festivalharing').show('fast');
     });
     
+    //LEGERTENT
+    
+    $('input.legervloer').on('change', function() {
+        $('#legerafbouw').show('fast');
+    });
+        $('input.legerafbouw').on('change', function() {
+        $('#legertoeb').show('fast');
+    });
+        $('input.legertoeb').on('change', function() {
+        $('#legertransport').show('fast');
+    });
+        $('input.legertransport').on('change', function() {
+        $('#legerstraat').show('fast');
+    });
+        $('input.legerstraat').on('change', function() {
+        $('#legerharing').show('fast');
+    });
+    
+        //aluhal
+    
+    $('input.alu_vloer').on('change', function() {
+        $('#alu_opties').show('fast');
+    });
+        $('input.alu_opties').on('change', function() {
+        $('#alu_toeb').show('fast');
+    });
+        $('input.alu_toeb').on('change', function() {
+        $('#alu_grond').show('fast');
+    });
+        $('input.alu_grond').on('change', function() {
+        $('#alu_haring').show('fast');
+    });
+    
     //Show advies input if box checked
     $('.advies').click(function() {
         $(".advieschecked").toggle(this.checked);
