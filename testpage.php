@@ -1,3 +1,17 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <script src="js/jquery.js"></script>
+    <script src="js/tent.js"></script>
+    <title></title>
+</head>
+<body>
+
+
+
+
 <?php
 
 //OPSLAGTENT
@@ -6,7 +20,7 @@ echo "<h1>Opslag Tent</h1><br>";
 if (!empty($_POST['adviescheck'])) {
     echo "Breedte: " . $_POST['adviesbreedte'];
     echo "<br>";
-    echo "Lengte: " . $_POST['advieslengte'];
+    echo "Lengte: " . $_POST['advieslengte'] . "<br>";
 }
 
  else {
@@ -119,6 +133,52 @@ if ( !empty($_POST['straat'])) {
 if (!empty($_POST['haringen_festival'])) {
     echo "<br> Er kunnen geen haringen geslagen worden.";
 }
+
+require 'PHPMailer-master\PHPMailerAutoload.php';
+
+
+$mail = new PHPMailer;
+
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.live.com';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'peterderoos@live.nl';                 // SMTP username
+$mail->Password = 'P1eter23';                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;
+//$mail->SMTPDebug = 1;
+
+$mail->setFrom('peterderoos@live.nl', 'Mailer');
+$mail->addAddress('daermaethortest@hotmail.com', 'Joe User');     // Add a recipient
+//$mail->addAddress('ellen@example.com');               // Name is optional
+//$mail->addReplyTo('info@example.com', 'Information');
+//$mail->addCC('cc@example.com');
+//$mail->addBCC('bcc@example.com');
+
+//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+$mail->isHTML(true);                                  // Set email format to HTML
+
+$mail->Subject = 'Here is the subject';
+$mail->Body    = '<div id="logo" style="background-color: black;font-size: 2.4em;border: 1px solid transparent;border-radius: 5px 5px 0 0;padding: 5px;"><b style="color: white">DONSELAAR</b> <b style="color: #a4d042;">TENTEN</b></div>
+                  <h1>Bedankt voor uw aanvraag</h1><br>
+                  Wij nemen zo spoedig mogelijk contact met u op.
+                  <h2>Aanvraag details</h2>'
+
+    . " Breedte: " . $_POST['adviesbreedte'];
+$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    echo 'Message has been sent';
+}
+?>
+</body>
+</html>
 
 
 
