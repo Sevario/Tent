@@ -3,21 +3,7 @@ $(document).ready(function() {
     $('.matenform').show();
     $('.aantal').hide();
 
-    var counter =2;
-    $('.newtent').on("click", function() {
-//        var newtent = $( ".dropdownmenu option:checked" ).val();
-        
-//            if (newtent==="festival") {
-                $( ".formadd" ).append( "<div class='form2'></div>" );
-//                $(".form"+counter).load("ajax/ajax_festival_vloer.php");
-//                counter++;
-//            }
-
-//            if (newtent==="leger") {
-//                $(".form2").load("ajax/ajax_legertent.php");
-//            }
-        
-    });
+    
 
     $('#maten').change(function () {
         var selected = $('#maten option:selected').text();
@@ -48,7 +34,24 @@ $(document).ready(function() {
     //Show haringen/versturen when 5 is selected
         $('input.opslagondergrond').on('change', function() {
         $('#haringen').show('fast');
-        $('#opslagversturen').show('fast');
+    });
+    
+    //FESTIVAL
+     //Show 3 when 2 is selected
+    $('input.leggen').on('change', function() {
+        $('#festivalbezorgen').show('fast');
+    });
+    //Show 4 when 3 is selected
+        $('input.transport').on('change', function() {
+        $('#festivalgrond').show('fast');
+    });
+     //Show 5 when 4 is selected
+        $('input.opslagopties').on('change', function() {
+        $('#opslagondergrond').show('fast');
+    });     
+    //Show haringen/versturen when 5 is selected
+        $('input.straat').on('change', function() {
+        $('#festivalharing').show('fast');
     });
     
     //Show advies input if box checked
