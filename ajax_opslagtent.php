@@ -56,12 +56,12 @@
                 </label>
                 <label>
                     <input class='opslagwanden' type='checkbox' id='sandwichpanelen' name='zijwanden' value='Sandwich Panelen'/>
-                    <label class='checkbox' for='sandwichpanelen'><img src='img/sandwichpanelen.svg' /></label>
+                    <label class='checkbox' for='sandwichpanelen'><img src='img/geen.svg' /></label>
                     <p>Sandwich Panelen</p>
                 </label>
                 <label>
                     <input class='opslagwanden' type='checkbox' id='damwand' name='zijwanden' value='Dam Wand'/>
-                    <label class='checkbox' for='damwand'><img src='img/dam_wand.svg' /></label>
+                    <label class='checkbox' for='damwand'><img src='img/geen.svg' /></label>
                     <p>Dam Wand</p>
                 </label>
             </div>
@@ -69,17 +69,17 @@
                 <label>3. Deuren</label><br>
                 <label>
                     <input class='opslagdeuren' type='checkbox' id='roldeur' name='rol_deur' value='Roldeur'/>
-                    <label class='checkbox' for='roldeur'><img src='img/roldeur.svg' /></label>
+                    <label class='checkbox' for='roldeur'><img src='img/geen.svg' /></label>
                     <p>Roldeur</p>
                 </label>
                 <label>
                     <input class='opslagdeuren' type='checkbox' id='overhead' name='overhead_deur' value='Overhead Deur'/>
-                    <label class='checkbox' for='overhead'><img src='img/overhead_deur.svg' /></label>
+                    <label class='checkbox' for='overhead'><img src='img/geen.svg' /></label>
                     <p>Overhead Deur</p>
                 </label>
                 <label>
                     <input class='opslagdeuren' type='checkbox' id='enkeledeur' name='enkele_entree_deur' value='Enkele Entreedeur'/>
-                    <label class='checkbox' for='enkeledeur'><img src='img/enkele_entree_deur.svg' /></label>
+                    <label class='checkbox' for='enkeledeur'><img src='img/geen.svg' /></label>
                     <p>Enkele Entreedeur</p>
                 </label>
                 <label>
@@ -120,7 +120,7 @@
                 <label>5. Ondergrond</label><br>
                 <label>
                     <input class='opslagondergrond' type='checkbox' id='stenenstraat' name='ondergrond' value='Stenen Straat'/>
-                    <label class='checkbox' for='stenenstraat'><img src='img/stenen_straat.svg' /></label>
+                    <label class='checkbox' for='stenenstraat'><img src='img/tegels.svg' /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>
