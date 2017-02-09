@@ -14,14 +14,29 @@
                 
                 <script>
                     $(document).ready(function() {
-                        $(".form1").load("ajax_opslagtent.php");
+                        $(".formopslag").load("ajax/ajax_opslagtent.php");
                     });
                 </script>                    
-                <div class="form1"></div>
+                <div class="formopslag"></div>
+                <div class="formfestival"></div>
+                <div class="formleger"></div>
                 
                 
-                <label>
-                    Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een tent <button type="button">toevoegen</button>?
+                Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een 
+                
+                    <select class="dropdownmenu">
+                        <option>Selecteer de nieuwe tent</option>
+                        <?php if (!empty($opslag)) {
+                        echo "<option value='opslag'>Opslagtent</option>";
+                        }
+                        if (empty($festival)) {
+                        echo "<option value='festival'>Festival Vloer</option>";
+                        }
+                        if (empty($leger)) {
+                        echo "<option value='leger'>Legertent</option>";
+                        }
+                        ?>
+                    </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>
             
         </form>

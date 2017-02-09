@@ -2,7 +2,7 @@
             <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
             <script src="js/jquery.js"></script>
             <script src="js/tent.js"></script>
-
+            <?php $opslag = "yes"; ?>
             <div class="matenform">
                 <label>1. Maten</label>
                     <br />
@@ -47,7 +47,7 @@
                      </div>
                     <label>
                 </div>
-            <div class='checkhide' >
+            <div class='checkhide'>
                 <label>2. Zijwanden</label><br>
                 <label>
                     <input class='opslagwanden' type='checkbox' id='zeil' name='zijwanden' value='Zeil'/>
@@ -119,39 +119,39 @@
             <div class='checkhide' id='opslagondergrond' style='display: none;'>
                 <label>5. Ondergrond</label><br>
                 <label>
-                    <input class='opslagondergrond' type='checkbox' id='stenenstraat' name='ondergrond' value='Stenen Straat'/>
-                    <label class='checkbox' for='stenenstraat'><img src='img/tegels.svg' /></label>
+                    <input class='opslagondergrond' type='checkbox' id='op_stenenstraat' name='ondergrond' value='Stenen Straat'/>
+                    <label class='checkbox' for='op_stenenstraat'><img src='img/tegels.svg' /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>
-                    <input class='opslagondergrond' type='checkbox' id='asfalt' name='ondergrond' value='Asfalt'/>
-                    <label class='checkbox' for='asfalt'><img src='img/asfalt.svg' /></label>
+                    <input class='opslagondergrond' type='checkbox' id='op_asfalt' name='ondergrond' value='Asfalt'/>
+                    <label class='checkbox' for='op_asfalt'><img src='img/asfalt.svg' /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input class='opslagondergrond' type='checkbox' id='gras' name='ondergrond' value='Gras'/>
-                    <label class='checkbox' for='gras'><img src='img/gras.svg' /></label>
+                    <input class='opslagondergrond' type='checkbox' id='op_gras' name='ondergrond' value='Gras'/>
+                    <label class='checkbox' for='op_gras'><img src='img/gras.svg' /></label>
                     <p>Gras</p>
                 </label>
                 <label>
-                    <input type='checkbox' id='grind' name='ondergrond' value='Grind'/>
-                    <label class='checkbox' for='grind'><img src='img/grind.svg' /></label>
+                    <input type='checkbox' id='op_grind' name='ondergrond' value='Grind'/>
+                    <label class='checkbox' for='op_grind'><img src='img/grind.svg' /></label>
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input class='opslagondergrond' type='checkbox' id='beton' name='ondergrond' value='Beton'/>
-                    <label class='checkbox' for='beton'><img src='img/beton.svg' /></label>
+                    <input class='opslagondergrond' type='checkbox' id='op_beton' name='ondergrond' value='Beton'/>
+                    <label class='checkbox' for='op_beton'><img src='img/beton.svg' /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input class='opslagondergrond' type='checkbox' id='strand' name='ondergrond' value='Strand'/>
-                    <label class='checkbox' for='strand'><img src='img/strand.svg' /></label>
+                    <input class='opslagondergrond' type='checkbox' id='op_strand' name='ondergrond' value='Strand'/>
+                    <label class='checkbox' for='op_strand'><img src='img/strand.svg' /></label>
                     <p>Strand</p>
                 </label><br>
             </div>
             <div id='haringen' style='display: none;'>
                 <label>
-                     <input class='geenharingen' type='checkbox' name='haringen' value='geenharingen' />
+                     <input class='geenharingen' type='checkbox' name='op_haringen' value='geenharingen' />
                      Er kunnen geen haringen geslagen worden.
                 <label>
             </div>

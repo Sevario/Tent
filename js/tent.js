@@ -3,6 +3,24 @@ $(document).ready(function() {
     $('.matenform').show();
     $('.aantal').hide();
 
+    function isEmpty( el ){
+        return !$.trim(el.html());
+    }
+    
+    $('.newtent').click(function() {
+        var newtent = $( ".dropdownmenu option:checked" ).val();
+
+            if (newtent==="festival") {
+                $(".formfestival").load("ajax/ajax_festival_vloer.php");
+            }
+
+            if (newtent==="leger") {
+                $(".formleger").load("ajax/ajax_legertent.php");
+            }
+        
+        
+    });
+
     $('#maten').change(function () {
         var selected = $('#maten option:selected').text();
         if (selected !== "") {
@@ -34,8 +52,6 @@ $(document).ready(function() {
         $('#haringen').show('fast');
         $('#opslagversturen').show('fast');
     });
-    
-    
     
     //Show advies input if box checked
     $('.advies').click(function() {
