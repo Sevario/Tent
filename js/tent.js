@@ -83,6 +83,18 @@ $(document).ready(function() {
         $('#alu_haring').show('fast');
     });
     
+            //pagode
+    
+    $('input.pagode_vloer').on('change', function() {
+        $('#pagode_toeb').show('fast');
+    });
+        $('input.pagode_toeb').on('change', function() {
+        $('#pagode_grond').show('fast');
+    });
+        $('input.pagode_grond').on('change', function() {
+        $('#pagode_haringen').show('fast');
+    });
+    
     //Show advies input if box checked
     $('.advies').click(function() {
         $(".advieschecked").toggle(this.checked);
