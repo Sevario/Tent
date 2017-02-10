@@ -6,7 +6,7 @@
 
 <body>
     <a href="aluhal.php">Aluhal</a><br>
-    <a href="festival vloer.php">Festival vloer</a><br>
+    <a href="festival_vloer.php">Festival vloer</a><br>
     <a href="legertent.php">Leger Tent</a><br>
     <a href="opslagtent.php">Opslag Tent</a><br>
     <a href="pagode.php">Pagode</a><br>

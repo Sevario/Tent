@@ -19,14 +19,14 @@
                         <option value="option2">5x10</option>
                     </select>
                      </div>
-            <div class="aantaldiv">
+            <div class="aantaldiv" style="display: none;">
                  <input class="aantal" type="text" class="form-control" name="aantal" placeholder="Aantal">
             </div>
             <div class="checkhide">
                 <label>2. Vloer</label><br>
                 <label>
                     <input class="legervloer" type="checkbox" id="leger_vlonders" name="leger_vloeren"/>
-                    <label class="checkbox" for="leger_vlonders"><img src="img/vlonders.svg" /></label>
+                    <label class="checkbox" for="leger_vlonders"><img src="img/vlonders_leveren.svg" /></label>
                     <p>Vlonders</p>
                 </label>
                 <label>

@@ -76,7 +76,7 @@
                     });
                     
                     
-                        $(".formafestival").load("ajax/ajax_festival_vloer.php");
+                        $(".formfestival").load("ajax/ajax_festival_vloer.php");
                     });
                 </script>                    
                 <div class="formadd">

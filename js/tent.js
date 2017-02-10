@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $('.matenform').show();
-    $('.aantal').hide();
+    
 
     
 
@@ -201,6 +201,11 @@ function showForm(){
         document.getElementById("f3").style.display="none";
         document.getElementById("f4").style.display="block";
     }
+    
+    $('#maten').on('change', function() {
+        $('.aantaldiv').show('fast');
+    });
+
 }
 
 
