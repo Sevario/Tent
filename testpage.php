@@ -17,10 +17,14 @@
 //OPSLAGTENT
 
 echo "<h1>Opslag Tent</h1><br>";
+$lengte;
+$breedte;
 if (!empty($_POST['adviescheck'])) {
     echo "Breedte: " . $_POST['adviesbreedte'];
+    $breedte = $_POST['adviesbreedte'];
     echo "<br>";
     echo "Lengte: " . $_POST['advieslengte'] . "<br>";
+    $lengte = $_POST['advieslengte'];
 }
 
  else {
@@ -29,12 +33,16 @@ if (!empty($_POST['adviescheck'])) {
         echo "Breedte: " . $_POST['breedte'];
         echo "<br>";
 
+        $breedte = $_POST['breedte'];
+        
     }
 
     if ( !empty($_POST['lengte'])) {
 
         echo "Lengte: " . $_POST['lengte'];
         echo "<br>";
+        
+        $breedte = $_POST['lengte'];
     }   
 
 }
@@ -102,7 +110,7 @@ if ( !empty($_POST['ondergrond'])) {
     echo "Ondergrond: " . $_POST['ondergrond'];
     
 }
-if (!empty($_POST['haringen'])) {
+if (!empty($_POST['op_haringen'])) {
     echo "<br> Er kunnen geen haringen geslagen worden.";
 }
 //Festival vloer
