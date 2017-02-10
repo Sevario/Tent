@@ -8,7 +8,6 @@
         <title></title>
     </head>
     <body>
-        <h1>Opslagtent</h1> 
         <form  action="testpage.php" method="post">
             
                 

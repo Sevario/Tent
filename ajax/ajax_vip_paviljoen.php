@@ -50,85 +50,85 @@
             <div class="checkhide">
                 <label>2. Opties</label><br>
                 <label>
-                    <input type="checkbox" id="dak"  name="opties"/>
-                    <label class="checkbox" for="dak"><img src="img/geen.svg" /></label>
+                    <input class="vip_opties" type="checkbox" id="vip_dak"  name="vip_opties"/>
+                    <label class="checkbox" for="vip_dak"><img src="img/geen.svg" /></label>
                     <p>Transparant dak</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="wand"  name="opties"/>
-                    <label class="checkbox" for="wand"><img src="img/geen.svg" /></label>
+                    <input class="vip_opties" type="checkbox" id="vip_wand"  name="vip_opties"/>
+                    <label class="checkbox" for="vip_wand"><img src="img/geen.svg" /></label>
                     <p>Glaswand per meter</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="bankirai"  name="opties"/>
-                    <label class="checkbox" for="bankirai"><img src="img/geen.svg" /></label>
+                    <input class="vip_opties" type="checkbox" id="vip_bankirai"  name="vip_opties"/>
+                    <label class="checkbox" for="vip_bankirai"><img src="img/geen.svg" /></label>
                     <p>Bankirai vloertegel</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="antraciet"  name="opties"/>
-                    <label class="checkbox" for="antraciet"><img src="img/geen.svg" /></label>
+                    <input class="vip_opties" type="checkbox" id="vip_antraciet"  name="vip_opties"/>
+                    <label class="checkbox" for="vip_antraciet"><img src="img/geen.svg" /></label>
                     <p>Antraciet tapijttegel</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" style="display:none;" id="vip_toeb">
                 <label>3. Toebehoren</label><br>
                 <label>
-                    <input type="checkbox" id="brandblusser" />
-                    <label class="checkbox" for="brandblusser"><img src="img/brandblusser.svg" /></label>
+                    <input class="vip_toeb" type="checkbox" id="vip_brandblusser" />
+                    <label class="checkbox" for="vip_brandblusser"><img src="img/brandblusser.svg" /></label>
                     <p>Brandblusser</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="noodverlichting" />
-                    <label class="checkbox" for="noodverlichting"><img src="img/noodverlichting.svg" /></label>
+                    <input class="vip_toeb" type="checkbox" id="vip_noodverlichting" />
+                    <label class="checkbox" for="vip_noodverlichting"><img src="img/noodverlichting.svg" /></label>
                     <p>Noodverlichting</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="heater" />
-                    <label class="checkbox" for="heater"><img src="img/heater.svg" /></label>
+                    <input class="vip_toeb" type="checkbox" id="vip_heater" />
+                    <label class="checkbox" for="vip_heater"><img src="img/heater.svg" /></label>
                     <p>Heater</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geen" name="vloer" />
-                    <label class="checkbox" for="geen"><img src="img/geen.svg" /></label>
+                    <input class="vip_toeb" type="checkbox" id="vip_geen" />
+                    <label class="checkbox" for="vip_geen"><img src="img/geen.svg" /></label>
                     <p>Geen</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" style="display:none;" id="vip_grond">
                 <label>4. Ondergrond</label><br>
                 <label>
-                    <input type="checkbox" id="stenenstraat" name="straat"/>
-                    <label class="checkbox" for="stenenstraat"><img src="img/tegels.svg" /></label>
+                    <input class="vip_grond" type="checkbox" id="vip_stenenstraat" name="vip_straat"/>
+                    <label class="checkbox" for="vip_stenenstraat"><img src="img/tegels.svg" /></label>
                     <p>Stenen straat</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="asfalt" name="straat"/>
-                    <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
+                    <input class="vip_grond" type="checkbox" id="vip_asfalt" name="vip_straat"/>
+                    <label class="checkbox" for="vip_asfalt"><img src="img/asfalt.svg" /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="gras" name="straat"/>
-                    <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
+                    <input class="vip_grond" type="checkbox" id="vip_gras" name="vip_straat"/>
+                    <label class="checkbox" for="vip_gras"><img src="img/gras.svg" /></label>
                     <p>Gras</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="grind" name="straat"/>
-                    <label class="checkbox" for="grind"><img src="img/grind.svg" /></label>
+                    <input class="vip_grond" type="checkbox" id="vip_grind" name="vip_straat"/>
+                    <label class="checkbox" for="vip_grind"><img src="img/grind.svg" /></label>
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="beton" name="straat"/>
-                    <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
+                    <input class="vip_grond" type="checkbox" id="vip_beton" name="vip_straat"/>
+                    <label class="checkbox" for="vip_beton"><img src="img/beton.svg" /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="strand" name="straat"/>
-                    <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
+                    <input class="vip_grond" type="checkbox" id="vip_strand" name="vip_straat"/>
+                    <label class="checkbox" for="vip_strand"><img src="img/strand.svg" /></label>
                     <p>Strand</p>
                 </label>
             </div>
-            <div>
+            <div style="display:none;" id="vip_haringen">
                 <label>
-                    <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen">
+                    <input class="geenharingen" type="checkbox" name="vip_haringen" value="geenharingen">
                     Er kunnen geen haringen geslagen worden.<br>
                 </label><br>
             </div>

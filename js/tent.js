@@ -119,6 +119,18 @@ $(document).ready(function() {
         $('#stretch_haringen').show('fast');
     });
     
+                    //vip paviljoen
+    
+    $('input.vip_opties').on('change', function() {
+        $('#vip_toeb').show('fast');
+    });
+        $('input.vip_toeb').on('change', function() {
+        $('#vip_grond').show('fast');
+    });
+        $('input.vip_grond').on('change', function() {
+        $('#vip_haringen').show('fast');
+    });
+    
     //Show advies input if box checked
     $('.advies').click(function() {
         $(".advieschecked").toggle(this.checked);

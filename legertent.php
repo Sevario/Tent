@@ -8,116 +8,92 @@
         <title></title>
     </head>
     <body>
-        <h1>Legertent</h1> 
-        <form>
-            <div class="matenform">
-                <label>1. Maten</label>
-                    <br />
-                    <select id='maten'> 
-                        <option value="null"></option>
-                        <option value="option1">5x5</option>
-                        <option value="option2">5x10</option>
-                    </select>
+        <form  action="testpage.php" method="post">
+            
+                
+                <script>
+                    $(document).ready(function() {
+                    var counter =2;
+                    $('.newtent').on("click", function() {
+                        var newtent = $( ".dropdownmenu option:checked" ).val();
+                            if (counter<9) {
+                                if (newtent==="festival") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_festival_vloer.php");
+                                    counter++;
+                                }
+
+                                if (newtent==="leger") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_legertent.php");
+                                    counter++;
+                                }
+
+                                if (newtent==="aluhal") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_aluhal.php");
+                                    counter++;
+                                }
+
+                                if (newtent==="opslag") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_opslagtent.php");
+                                    counter++;
+                                }
+
+                                if (newtent==="pagode") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_pagode.php");
+                                    counter++;
+                                }
+
+                                if (newtent==="span") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_spantent.php");
+                                    counter++;
+                                }
+
+                                if (newtent==="stretch") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_stretchtent.php");
+                                    counter++;
+                                }
+
+                                if (newtent==="vip") {
+                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
+                                    $(".form"+counter).load("ajax/ajax_vip_paviljoen.php");
+                                    counter++;
+                                }
+                          }
+
+                    });
+                    
+                    
+                        $(".form1").load("ajax/ajax_legertent.php");
+                    });
+                </script>                    
+                <div class="formadd">
+                <div class="form1"></div>
                 </div>
-            <div class="aantaldiv">
-                 <input class="aantal" type="text" class="form-control" name="aantal" placeholder="Aantal">
-            </div>
-            <div class="checkhide">
-                <label>2. Vloer</label><br>
-                <label>
-                    <input class="legervloer" type="checkbox" id="vlonders" name="vloeren"/>
-                    <label class="checkbox" for="vlonders"><img src="img/vlonders.svg" /></label>
-                    <p>Vlonders</p>
+                
+                
+                Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een 
+                
+                    <select class="dropdownmenu">
+                        <option>Selecteer de nieuwe tent</option>
+                        <option value='opslag'>Opslagtent</option>
+                        <option value='festival'>Festival Vloer</option>
+                        <option value='leger'>Legertent</option>
+                        <option value="aluhal">Aluhal</option>
+                        <option value="pagode">Pagode</option>
+                        <option value="span">Spantent</option>
+                        <option value="stretch">Stretchtent</option>
+                        <option value="vip">Vip Paviljoen</option>
+                        
+                        
+                    </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>
-                <label>
-                    <input class="legervloer" type="checkbox" id="zeil" name="vloeren"/>
-                    <label class="checkbox" for="zeil"><img src="img/zeil.svg" /></label>
-                    <p>Zeil</p>
-                </label>
-                <label>
-                    <input  class="legervloer"type="checkbox" id="geenvloer" name="vloeren"/>
-                    <label class="checkbox" for="geenvloer"><img src="img/geen.svg" /></label>
-                    <p>Geen Vloer</p>
-                </label>
-            </div>
-            <div class="checkhide" id="legerafbouw" style='display: none;'>
-                <label>3. Op/Afbouw</label><br>
-                <label>
-                    <input class="legerafbouw" type="checkbox" id="opafbouwja" name="op_afbouw"/>
-                    <label class="checkbox" for="opafbouwja"><img src="img/op_afbouw.svg" /></label>
-                    <p>Op/Afbouw</p>
-                </label>
-                <label>
-                    <input class="legerafbouw" type="checkbox" id="opafbouwnee" name="op_afbouw"/>
-                    <label class="checkbox" for="opafbouwnee"><img src="img/geen.svg" /></label>
-                    <p>Geen Op/Afbouw</p>
-                </label>
-            </div>
-            <div class="checkhide" id="legertoeb" style='display: none;'>
-                <label>4. Toebehoren</label><br>
-                <label>
-                    <input class="legertoeb" type="checkbox" id="veldbed"/>
-                    <label class="checkbox" for="veldbed"><img src="img/veldbed.svg" /></label>
-                    <p>Veldbed</p>
-                </label>
-                <label>
-                    <input class="legertoeb" type="checkbox" id="slaapzak"/>
-                    <label class="checkbox" for="slaapzak"><img src="img/slaapzak.svg" /></label>
-                    <p>Slaapzak</p>
-                </label>
-            </div>
-            <div class="checkhide" id="legertransport" style='display: none;'>
-                <label>5. Transport</label><br>
-                <label>
-                    <input class="legertransport" type="checkbox" id="bezorgen" name="transport"/>
-                    <label class="checkbox" for="bezorgen"><img src="img/bezorgen.svg" /></label>
-                    <p>Bezorgen</p>
-                </label>
-                <label>
-                    <input class="legertransport" type="checkbox" id="afhalen" name="transport"/>
-                    <label class="checkbox" for="afhalen"><img src="img/afhalen.svg" /></label>
-                    <p>Afhalen</p>
-                </label>
-            </div>
-            <div class="checkhide" id="legerstraat" style='display: none;'>
-                <label>6. Ondergrond</label><br>
-                <label>
-                    <input class="legerstraat" type="checkbox" id="stenenstraat" name="ondergrond"/>
-                    <label class="checkbox" for="stenenstraat"><img src="img/stenen_straat.svg" /></label>
-                    <p>Stenen Straat</p>
-                </label>
-                <label>
-                    <input class="legerstraat" type="checkbox" id="asftalt" name="ondergrond"/>
-                    <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
-                    <p>Asfalt</p>
-                </label>
-                <label>
-                    <input class="legerstraat" type="checkbox" id="gras" name="ondergrond"/>
-                    <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
-                    <p>Gras</p>
-                </label>
-                <label>
-                    <input class="legerstraat" type="checkbox" id="grind" name="ondergrond"/>
-                    <label class="checkbox" for="grind"><img src="img/grind.svg" /></label>
-                    <p>Grind</p>
-                </label>
-                <label>
-                    <input class="legerstraat" type="checkbox" id="beton" name="ondergrond"/>
-                    <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
-                    <p>Beton</p>
-                </label>
-                <label>
-                    <input class="legerstraat" type="checkbox" id="strand" name="ondergrond"/>
-                    <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
-                    <p>Strand</p>
-                </label><br>
-            </div>
-            <div id="legerharing" style='display: none;'>
-                <label>
-                     <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen" />
-                     Er kunnen geen haringen geslagen worden.
-                <label>
-            </div>
+            
         </form>
     </body>
 </html>
