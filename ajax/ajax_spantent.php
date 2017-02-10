@@ -37,75 +37,75 @@
             <div class="checkhide">
                 <label>2. Vloer</label><br>
                 <label>
-                    <input type="checkbox" id="vlonders"  name="vloer"/>
-                    <label class="checkbox" for="vlonders"><img src="img/vlonders.svg" /></label>
+                    <input class="span_vloer" type="checkbox" id="span_vlonders"  name="span_vloer"/>
+                    <label class="checkbox" for="span_vlonders"><img src="img/vlonders_leveren.svg" /></label>
                     <p>Vlonders</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geenvloer" name="vloer" />
-                    <label class="checkbox" for="geenvloer"><img src="img/geen.svg" /></label>
+                    <input class="span_vloer" type="checkbox" id="span_geenvloer" name="span_vloer" />
+                    <label class="checkbox" for="span_geenvloer"><img src="img/geen.svg" /></label>
                     <p>Geen Vloer</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" style="display:none;" id="span_toeb">
                 <label>3. Toebehoren</label><br>
                 <label>
-                    <input type="checkbox" id="brandblusser" />
-                    <label class="checkbox" for="brandblusser"><img src="img/brandblusser.svg" /></label>
+                    <input class="span_toeb" type="checkbox" id="span_brandblusser" />
+                    <label class="checkbox" for="span_brandblusser"><img src="img/brandblusser.svg" /></label>
                     <p>Brandblusser</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="noodverlichting" />
-                    <label class="checkbox" for="noodverlichting"><img src="img/noodverlichting.svg" /></label>
+                    <input class="span_toeb" type="checkbox" id="span_noodverlichting" />
+                    <label class="checkbox" for="span_noodverlichting"><img src="img/noodverlichting.svg" /></label>
                     <p>Noodverlichting</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="heater" />
-                    <label class="checkbox" for="heater"><img src="img/heater.svg" /></label>
+                    <input class="span_toeb" type="checkbox" id="span_heater" />
+                    <label class="checkbox" for="span_heater"><img src="img/heater.svg" /></label>
                     <p>Heater</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geen" name="vloer" />
-                    <label class="checkbox" for="geen"><img src="img/geen.svg" /></label>
+                    <input class="span_toeb" type="checkbox" id="span_geen" />
+                    <label class="checkbox" for="span_geen"><img src="img/geen.svg" /></label>
                     <p>Geen</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" style="display:none;" id="span_grond">
                 <label>4. Ondergrond</label><br>
                 <label>
-                    <input type="checkbox" id="stenenstraat" name="straat"/>
-                    <label class="checkbox" for="stenenstraat"><img src="img/tegels.svg" /></label>
+                    <input class="span_grond" type="checkbox" id="span_stenenstraat" name="span_straat"/>
+                    <label class="checkbox" for="span_stenenstraat"><img src="img/tegels.svg" /></label>
                     <p>Stenen straat</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="asfalt" name="straat"/>
-                    <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
+                    <input class="span_grond" type="checkbox" id="span_asfalt" name="span_straat"/>
+                    <label class="checkbox" for="span_asfalt"><img src="img/asfalt.svg" /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="gras" name="straat"/>
-                    <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
+                    <input class="span_grond" type="checkbox" id="span_gras" name="span_straat"/>
+                    <label class="checkbox" for="span_gras"><img src="img/gras.svg" /></label>
                     <p>Gras</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="grind" name="straat"/>
-                    <label class="checkbox" for="grind"><img src="img/grind.svg" /></label>
+                    <input class="span_grond" type="checkbox" id="span_grind" name="span_straat"/>
+                    <label class="checkbox" for="span_grind"><img src="img/grind.svg" /></label>
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="beton" name="straat"/>
+                    <input class="span_grond" type="checkbox" id="span_beton" name="span_straat"/>
                     <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="strand" name="straat"/>
-                    <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
+                    <input class="span_grond" type="checkbox" id="span_strand" name="span_straat"/>
+                    <label class="checkbox" for="span_strand"><img src="img/strand.svg" /></label>
                     <p>Strand</p>
                 </label>
             </div>
-            <div>
+        <div style="display:none;" id="span_haringen">
                 <label>
-                    <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen">
+                    <input class="geenharingen" type="checkbox" name="span_haringen" value="geenharingen">
                     Er kunnen geen haringen geslagen worden.<br>
                 </label><br>
             </div>

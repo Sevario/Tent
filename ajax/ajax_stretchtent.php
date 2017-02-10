@@ -87,75 +87,75 @@
             <div class="checkhide">
                 <label>2. Vloer</label><br>
                 <label>
-                    <input type="checkbox" id="vlonders"  name="vloer"/>
-                    <label class="checkbox" for="vlonders"><img src="img/vlonders.svg" /></label>
+                    <input class="stretch_vloer" type="checkbox" id="stretch_vlonders"  name="stretch_vloer"/>
+                    <label class="checkbox" for="stretch_vlonders"><img src="img/vlonders_leveren.svg" /></label>
                     <p>Vlonders</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="systeemvloer" name="vloer" />
-                    <label class="checkbox" for="systeemvloer"><img src="img/systeemvloer.svg" /></label>
+                    <input class="stretch_vloer" type="checkbox" id="stretch_systeemvloer" name="stretch_vloer" />
+                    <label class="checkbox" for="stretch_systeemvloer"><img src="img/systeemvloer.svg" /></label>
                     <p>Systeemvloer</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="geenvloer" name="vloer" />
-                    <label class="checkbox" for="geenvloer"><img src="img/geen.svg" /></label>
+                    <input class="stretch_vloer" type="checkbox" id="stretch_geenvloer" name="stretch_vloer" />
+                    <label class="checkbox" for="stretch_geenvloer"><img src="img/geen.svg" /></label>
                     <p>Geen Vloer</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" style="display:none;" id="stretch_toeb">
                 <label>3. Toebehoren</label><br>
                 <label>
-                    <input type="checkbox" id="brandblusser" />
-                    <label class="checkbox" for="brandblusser"><img src="img/brandblusser.svg" /></label>
+                    <input class="stretch_toeb" type="checkbox" id="stretch_brandblusser" />
+                    <label class="checkbox" for="stretch_brandblusser"><img src="img/brandblusser.svg" /></label>
                     <p>Brandblusser</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="noodverlichting" />
-                    <label class="checkbox" for="noodverlichting"><img src="img/noodverlichting.svg" /></label>
+                    <input class="stretch_toeb" type="checkbox" id="stretch_noodverlichting" />
+                    <label class="checkbox" for="stretch_noodverlichting"><img src="img/noodverlichting.svg" /></label>
                     <p>Noodverlichting</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="heater" />
-                    <label class="checkbox" for="heater"><img src="img/heater.svg" /></label>
+                    <input class="stretch_toeb" type="checkbox" id="stretch_heater" />
+                    <label class="checkbox" for="stretch_heater"><img src="img/heater.svg" /></label>
                     <p>Heater</p>
                 </label>
             </div>
-            <div class="checkhide">
+            <div class="checkhide" style="display:none;" id="stretch_grond">
                 <label>4. Ondergrond</label><br>
                 <label>
-                    <input type="checkbox" id="stenenstraat" name="straat"/>
-                    <label class="checkbox" for="stenenstraat"><img src="img/tegels.svg" /></label>
+                    <input class="stretch_grond" type="checkbox" id="stretch_stenenstraat" name="stretch_straat"/>
+                    <label class="checkbox" for="stretch_stenenstraat"><img src="img/tegels.svg" /></label>
                     <p>Stenen straat</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="asfalt" name="straat"/>
-                    <label class="checkbox" for="asfalt"><img src="img/asfalt.svg" /></label>
+                    <input class="stretch_grond" type="checkbox" id="stretch_asfalt" name="stretch_straat"/>
+                    <label class="checkbox" for="stretch_asfalt"><img src="img/asfalt.svg" /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="gras" name="straat"/>
-                    <label class="checkbox" for="gras"><img src="img/gras.svg" /></label>
+                    <input class="stretch_grond" type="checkbox" id="stretch_gras" name="stretch_straat"/>
+                    <label class="checkbox" for="stretch_gras"><img src="img/gras.svg" /></label>
                     <p>Gras</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="grind" name="straat"/>
-                    <label class="checkbox" for="grind"><img src="img/grind.svg" /></label>
+                    <input class="stretch_grond" type="checkbox" id="stretch_grind" name="stretch_straat"/>
+                    <label class="checkbox" for="stretch_grind"><img src="img/grind.svg" /></label>
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="beton" name="straat"/>
-                    <label class="checkbox" for="beton"><img src="img/beton.svg" /></label>
+                    <input class="stretch_grond" type="checkbox" id="stretch_beton" name="stretch_straat"/>
+                    <label class="checkbox" for="stretch_beton"><img src="img/beton.svg" /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input type="checkbox" id="strand" name="straat"/>
-                    <label class="checkbox" for="strand"><img src="img/strand.svg" /></label>
+                    <input class="stretch_grond" type="checkbox" id="stretch_strand" name="stretch_straat"/>
+                    <label class="checkbox" for="stretch_strand"><img src="img/strand.svg" /></label>
                     <p>Strand</p>
                 </label>
             </div>
-            <div>
+            <div style="display:none;" id="stretch_haringen">
                 <label>
-                <input class="geenharingen" type="checkbox" name="haringen" value="geenharingen">
+                <input class="geenharingen" type="checkbox" name="stretch_haringen" value="geenharingen">
                 Er kunnen geen haringen geslagen worden.<br>
                 </label><br>
             </div>

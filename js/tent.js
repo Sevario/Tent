@@ -95,6 +95,30 @@ $(document).ready(function() {
         $('#pagode_haringen').show('fast');
     });
     
+                //spantent
+    
+    $('input.span_vloer').on('change', function() {
+        $('#span_toeb').show('fast');
+    });
+        $('input.span_toeb').on('change', function() {
+        $('#span_grond').show('fast');
+    });
+        $('input.span_grond').on('change', function() {
+        $('#span_haringen').show('fast');
+    });
+    
+                    //stretchtent
+    
+    $('input.stretch_vloer').on('change', function() {
+        $('#stretch_toeb').show('fast');
+    });
+        $('input.stretch_toeb').on('change', function() {
+        $('#stretch_grond').show('fast');
+    });
+        $('input.stretch_grond').on('change', function() {
+        $('#stretch_haringen').show('fast');
+    });
+    
     //Show advies input if box checked
     $('.advies').click(function() {
         $(".advieschecked").toggle(this.checked);
