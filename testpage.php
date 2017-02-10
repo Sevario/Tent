@@ -181,7 +181,7 @@ $mail->Body .= "<table style='border-collapse: collapse;'>
             <td style='border-bottom: 1px solid black;'><b>Aantal</b></td>
         </tr>
         <tr>
-            <td style='border-bottom: 1px solid black;'>Opslagtent " . $_POST['lengte'] . " x " . $_POST['breedte'] . " meter " . " </td>
+            <td style='border-bottom: 1px solid black;'>Opslagtent " . $lengte . " x " . $breedte . " meter " . " </td>
             <td style='border-bottom: 1px solid black;'>1</td>
         </tr>
         <tr>
