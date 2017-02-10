@@ -162,22 +162,26 @@ $mail->addAddress('daermaethortest@hotmail.com', 'Joe User');     // Add a recip
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Bestelling Donselaar tenten';
-$mail->Body    = '<div id="geheel" style="background-color: #f3f6fa;border: 0 solid transparent;border-radius: 5px 5px 5px 5px;padding: 30px;">
-                    <div id="logo" style="background-color: black;font-size: 2.4em;border: 0 solid transparent;border-radius: 5px 5px 0 0;padding-left: 30px; padding-right: 5px;padding-top: 5px;padding-bottom: 5px;"><b style="color: white">DONSELAAR</b> <b style="color: #a4d042;">TENTEN</b></div>
+$mail->Body    = '<div id="geheel" style="background-color: #f3f6fa;border: 1px solid transparent;border-radius: 5px 5px 5px 5px;padding: 30px;">
+                    <div id="logo" style="background-color: black;font-size: 2.4em;border: 1px solid transparent;border-radius: 5px 5px 0 0;padding-left: 30px; padding-right: 5px;padding-top: 5px;padding-bottom: 5px;"><b style="color: white">DONSELAAR</b> <b style="color: #a4d042;">TENTEN</b></div>
                      <h1>Bedankt voor uw aanvraag</h1><br>
                      Wij nemen zo spoedig mogelijk contact met u op.
-                     <h2>Aanvraag details</h2>
-    <table>
+                     <h2>Aanvraag details</h2>'?> <?php if($_POST['opslagcheck'] == 1){
+$mail->Body .= "<table>
         <tr>
             <td><b>Product</b></td>
             <td><b>Aantal</b></td>
         </tr>
         <tr>
-            <td>Breedte:</td>
-            <td>' . $_POST['adviesbreedte'] . 'x</td>
+            <td></td>
+            <td></td>
         </tr>
-</table>';
-
+        <tr>
+            <td>" . $_POST['lengte'] . " x " . $_POST['breedte'] . " meter " . " </td>
+            <td></td>
+        </tr>
+</table>";
+};
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {

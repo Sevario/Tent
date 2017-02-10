@@ -7,40 +7,42 @@
             <div class="matenform">
                 <label>1. Maten</label>
                     <br />
+
                     <select id='maten' name='breedte'> 
                         <option value='breedte'>Breedte</option>
-                        <option value='6 Meter'>6</option>
-                        <option value='8 Meter'>8</option>
-                        <option value='10 Meter'>10</option>
-                        <option value='12.5 Meter'>12.5</option>
-                        <option value='15 Meter'>15</option>
-                        <option value='20 Meter'>20</option>
-                        <option value='25 Meter'>25</option>
+                        <option value='6'>6</option>
+                        <option value='8'>8</option>
+                        <option value='10'>10</option>
+                        <option value='12.5'>12.5</option>
+                        <option value='15'>15</option>
+                        <option value='20'>20</option>
+                        <option value='25'>25</option>
                     </select>
                     <select id='maten' name='lengte'> 
                         <option value='lengte'>Lengte</option>
-                        <option value='5 Meter'>5</option>
-                        <option value='10 Meter'>10</option>
-                        <option value='15 Meter'>15</option>
-                        <option value='20 Meter'>20</option>
-                        <option value='25 Meter'>25</option>
-                        <option value='30 Meter'>30</option>
-                        <option value='35 Meter'>35</option>
-                        <option value='40 Meter'>40</option>
-                        <option value='45 Meter'>45</option>
-                        <option value='50 Meter'>50</option>
-                        <option value='55 Meter'>55</option>
-                        <option value='60 Meter'>60</option>
-                        <option value='65 Meter'>65<option>
-                        <option value='70 Meter'>70</option>
-                        <option value='75 Meter'>75</option>
-                        <option value='80 Meter'>80</option>
-                        <option value='85 Meter'>85</option>
-                        <option value='90 Meter'>90</option>
-                        <option value='95 Meter'>95</option>
-                        <option value='100 Meter'>100</option>
+                        <option value='5'>5</option>
+                        <option value='10'>10</option>
+                        <option value='15'>15</option>
+                        <option value='20'>20</option>
+                        <option value='25'>25</option>
+                        <option value='30'>30</option>
+                        <option value='35'>35</option>
+                        <option value='40'>40</option>
+                        <option value='45'>45</option>
+                        <option value='50'>50</option>
+                        <option value='55'>55</option>
+                        <option value='60'>60</option>
+                        <option value='65'>65<option>
+                        <option value='70'>70</option>
+                        <option value='75'>75</option>
+                        <option value='80'>80</option>
+                        <option value='85'>85</option>
+                        <option value='90'>90</option>
+                        <option value='95'>95</option>
+                        <option value='100'>100</option>
                     </select><br>
                     <label>
+                        <input type="hidden" name="opslagcheck" value="1"/>
                         <input class='advies' type='checkbox' name='adviescheck' value='advies' /> Mijn maat staat er niet tussen, ik wil graag advies. 
                      <div class='advieschecked' style='display: none;'>
                             Breedte:<input class='adviesbreedte' type='text' name='adviesbreedte'/>
