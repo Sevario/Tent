@@ -61,7 +61,7 @@
                 <label>4. Ondergrond</label><br>
                 <label>
                     <input type="checkbox" id="stenenstraat" name="vloeren"/>
-                    <label class="checkbox" for="stenenstraat"><img src="img/stenen_straat.svg" /></label>
+                    <label class="checkbox" for="stenenstraat"><img src="img/tegels.svg" /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>

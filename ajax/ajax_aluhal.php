@@ -110,7 +110,7 @@
                 <label>5. Ondergrond</label><br>
                 <label>
                     <input class="alu_grond" type="checkbox" id="alu_stenenstraat" name="alu_ondergrond"/>
-                    <label class="checkbox" for="alu_stenenstraat"><img src="img/stenen_straat.svg" /></label>
+                    <label class="checkbox" for="alu_stenenstraat"><img src="img/tegels.svg" /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>

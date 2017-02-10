@@ -82,7 +82,7 @@
                 <label>6. Ondergrond</label><br>
                 <label>
                     <input class="legerstraat" type="checkbox" id="leger_stenenstraat" name="leger_ondergrond"/>
-                    <label class="checkbox" for="leger_stenenstraat"><img src="img/stenen_straat.svg" /></label>
+                    <label class="checkbox" for="leger_stenenstraat"><img src="img/tegels.svg" /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>
