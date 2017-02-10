@@ -130,7 +130,7 @@ if ( !empty($_POST['straat'])) {
 
 }
 
-if (!empty($_POST['haringen_festival'])) {
+if (!empty($_POST['op_haringen'])) {
     echo "<br> Er kunnen geen haringen geslagen worden.";
 }
 
@@ -161,24 +161,40 @@ $mail->addAddress('daermaethortest@hotmail.com', 'Joe User');     // Add a recip
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Bestelling Donselaar tenten';
+$mail->Subject = 'Aanvraag factuur';
 $mail->Body    = '<div id="geheel" style="background-color: #f3f6fa;border: 1px solid transparent;border-radius: 5px 5px 5px 5px;padding: 30px;">
-                    <div id="logo" style="background-color: black;font-size: 2.4em;border: 1px solid transparent;border-radius: 5px 5px 0 0;padding-left: 30px; padding-right: 5px;padding-top: 5px;padding-bottom: 5px;"><b style="color: white">DONSELAAR</b> <b style="color: #a4d042;">TENTEN</b></div>
+                    <div id="logo" style="background-color: black;font-size: 2.4em;border: 1px solid transparent;border-radius: 5px 5px 0 0;padding-left: 30px; padding-right: 5px;padding-top: 5px;padding-bottom: 5px;"><b style="color: white">DONSELAAR</b><b style="color: #a4d042;">TENTEN</b></div>
                      <h1>Bedankt voor uw aanvraag</h1><br>
                      Wij nemen zo spoedig mogelijk contact met u op.
                      <h2>Aanvraag details</h2>'?> <?php if($_POST['opslagcheck'] == 1){
-$mail->Body .= "<table>
+$mail->Body .= "<table style='border-collapse: collapse;'>
         <tr>
-            <td><b>Product</b></td>
-            <td><b>Aantal</b></td>
+            <td style='border-bottom: 1px solid black;'><b>Product</b></td>
+            <td style='border-bottom: 1px solid black;'><b>Aantal</b></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td style='border-bottom: 1px solid black;'>Opslagtent " . $_POST['lengte'] . " x " . $_POST['breedte'] . " meter " . " </td>
+            <td style='border-bottom: 1px solid black;'>1</td>
         </tr>
         <tr>
-            <td>" . $_POST['lengte'] . " x " . $_POST['breedte'] . " meter " . " </td>
-            <td></td>
+            <td style='border-bottom: 1px solid black;'>Zijwanden: " . $_POST['zijwanden'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>$deuren</td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>$opties</td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['ondergrond'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'> " . $_POST['op_haringen'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
         </tr>
 </table>";
 };

@@ -141,7 +141,7 @@
             </div>
             <div id="alu_haring" style='display: none;'>
                 <label>
-                     <input class="geenharingen" type="checkbox" name="alu_haringen" value="geenharingen" />
+                     <input class="geenharingen" type="checkbox" name="alu_haringen" value="Er kunnen geen haringen geslagen worden." />
                      Er kunnen geen haringen geslagen worden.
                 <label>
             </div>
