@@ -38,7 +38,7 @@
                     </label>
                     <label>
                         <input class="transport" type="checkbox" id="afhalen" name="transport" value="Afhalen"/>
-                        <label class="checkbox" for="afhalen"><img src="img/afhalen.svg" /></label>
+                        <label class="checkbox" for="afhalen"><img src="img/geen.svg" /></label>
                         <p>Afhalen</p>
                     </label>
                 </div>

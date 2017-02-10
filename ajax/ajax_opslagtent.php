@@ -3,7 +3,7 @@
             <script src="js/jquery.js"></script>
             <script src="js/tent.js"></script>
             <?php $opslag = "yes"; ?>
-                    <h1>Pagode</h1>
+                    <h1>Opslagtent</h1>
             <div class="matenform">
                 <label>1. Maten</label>
                     <br />

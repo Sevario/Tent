@@ -8,6 +8,7 @@
         <title></title>
     </head>
     <body>
+        <?php $legertent = 1; ?>
         <h1>Legertent</h1> 
             <div class="matenform">
                 <label>1. Maten</label>

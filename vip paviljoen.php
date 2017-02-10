@@ -13,63 +13,70 @@
                 
                 <script>
                     $(document).ready(function() {
-                    var counter =2;
+                        $(".dropfill").load("ajax/ajax_dropdown.php");
                     $('.newtent').on("click", function() {
                         var newtent = $( ".dropdownmenu option:checked" ).val();
-                            if (counter<9) {
                                 if (newtent==="festival") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_festival_vloer.php");
-                                    counter++;
+                                    if (!$('.formfestival').length) {
+                                        $( ".formadd" ).append( "<div class='formfestival'></div>" );
+                                        $(".formfestival").load("ajax/ajax_festival_vloer.php");
+                                    }
                                 }
 
                                 if (newtent==="leger") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_legertent.php");
-                                    counter++;
-                                }
+                                    if (!$('.formleger').length) {
+                                        $( ".formadd" ).append( "<div class='formleger'></div>" );
+                                        $(".formleger").load("ajax/ajax_legertent.php");
+                                   }
+                                }   
 
                                 if (newtent==="aluhal") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_aluhal.php");
-                                    counter++;
+                                    if (!$('.formaluhal').length) {
+                                        $( ".formadd" ).append( "<div class='formaluhal'></div>" );
+                                        $(".formaluhal").load("ajax/ajax_aluhal.php");
+                                    }
                                 }
 
                                 if (newtent==="opslag") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_opslagtent.php");
-                                    counter++;
+                                    if (!$('.formopslag').length) {
+                                        $( ".formadd" ).append( "<div class='formopslag'></div>" );
+                                        $(".formopslag").load("ajax/ajax_opslagtent.php");
+                                    }
                                 }
 
                                 if (newtent==="pagode") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_pagode.php");
-                                    counter++;
+                                    if (!$('.formpagode').length) {
+                                        $( ".formadd" ).append( "<div class='formpagode'></div>" );
+                                        $(".formpagode").load("ajax/ajax_pagode.php");
+                                    }
                                 }
 
                                 if (newtent==="span") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_spantent.php");
-                                    counter++;
+                                    if (!$('.formspan').length) {
+                                        $( ".formadd" ).append( "<div class='formspan'></div>" );
+                                        $(".formspan").load("ajax/ajax_spantent.php");
+                                    }
                                 }
 
                                 if (newtent==="stretch") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_stretchtent.php");
-                                    counter++;
+                                    if (!$('.formstretch').length) {
+                                        $( ".formadd" ).append( "<div class='formstretch'></div>" );
+                                        $(".formstretch").load("ajax/ajax_stretchtent.php");
+                                    }
                                 }
 
                                 if (newtent==="vip") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_vip_paviljoen.php");
-                                    counter++;
+                                    if (!$('.formvip').length) {
+                                        $( ".formadd" ).append( "<div class='formvip'></div>" );
+                                        $(".formvip").load("ajax/ajax_vip_paviljoen.php");
+                                    }
                                 }
-                          }
+                          
 
                     });
                     
                     
-                        $(".form1").load("ajax/ajax_vip_paviljoen.php");
+                        $(".formaluhal").load("ajax/ajax_aluhal.php");
                     });
                 </script>                    
                 <div class="formadd">

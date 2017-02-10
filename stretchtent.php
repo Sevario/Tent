@@ -13,82 +13,81 @@
                 
                 <script>
                     $(document).ready(function() {
-                    var counter =2;
+                        $(".dropfill").load("ajax/ajax_dropdown.php");
                     $('.newtent').on("click", function() {
                         var newtent = $( ".dropdownmenu option:checked" ).val();
-                            if (counter<9) {
                                 if (newtent==="festival") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_festival_vloer.php");
-                                    counter++;
+                                    if (!$('.formfestival').length) {
+                                        $( ".formadd" ).append( "<div class='formfestival'></div>" );
+                                        $(".formfestival").load("ajax/ajax_festival_vloer.php");
+                                    }
                                 }
 
                                 if (newtent==="leger") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_legertent.php");
-                                    counter++;
-                                }
+                                    if (!$('.formleger').length) {
+                                        $( ".formadd" ).append( "<div class='formleger'></div>" );
+                                        $(".formleger").load("ajax/ajax_legertent.php");
+                                   }
+                                }   
 
                                 if (newtent==="aluhal") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_aluhal.php");
-                                    counter++;
+                                    if (!$('.formaluhal').length) {
+                                        $( ".formadd" ).append( "<div class='formaluhal'></div>" );
+                                        $(".formaluhal").load("ajax/ajax_aluhal.php");
+                                    }
                                 }
 
                                 if (newtent==="opslag") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_opslagtent.php");
-                                    counter++;
+                                    if (!$('.formopslag').length) {
+                                        $( ".formadd" ).append( "<div class='formopslag'></div>" );
+                                        $(".formopslag").load("ajax/ajax_opslagtent.php");
+                                    }
                                 }
 
                                 if (newtent==="pagode") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_pagode.php");
-                                    counter++;
+                                    if (!$('.formpagode').length) {
+                                        $( ".formadd" ).append( "<div class='formpagode'></div>" );
+                                        $(".formpagode").load("ajax/ajax_pagode.php");
+                                    }
                                 }
 
                                 if (newtent==="span") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_spantent.php");
-                                    counter++;
+                                    if (!$('.formspan').length) {
+                                        $( ".formadd" ).append( "<div class='formspan'></div>" );
+                                        $(".formspan").load("ajax/ajax_spantent.php");
+                                    }
                                 }
 
                                 if (newtent==="stretch") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_stretchtent.php");
-                                    counter++;
+                                    if (!$('.formstretch').length) {
+                                        $( ".formadd" ).append( "<div class='formstretch'></div>" );
+                                        $(".formstretch").load("ajax/ajax_stretchtent.php");
+                                    }
                                 }
 
                                 if (newtent==="vip") {
-                                    $( ".formadd" ).append( "<div class='form"+counter+"'></div>" );
-                                    $(".form"+counter).load("ajax/ajax_vip_paviljoen.php");
-                                    counter++;
+                                    if (!$('.formvip').length) {
+                                        $( ".formadd" ).append( "<div class='formvip'></div>" );
+                                        $(".formvip").load("ajax/ajax_vip_paviljoen.php");
+                                    }
                                 }
-                          }
+                          
 
                     });
                     
                     
-                        $(".form1").load("ajax/ajax_stretchtent.php");
+                        $(".formstretch").load("ajax/ajax_stretchtent.php");
                     });
                 </script>                    
                 <div class="formadd">
-                <div class="form1"></div>
+                <div class="formstretch"></div>
                 </div>
                 
                 
                 Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een 
-                
-                    <select class="dropdownmenu">
-                        <option>Selecteer de nieuwe tent</option>
-                        <option value='opslag'>Opslagtent</option>
-                        <option value='festival'>Festival Vloer</option>
-                        <option value='leger'>Legertent</option>
-                        <option value="aluhal">Aluhal</option>
-                        <option value="pagode">Pagode</option>
-                        <option value="span">Spantent</option>
-                        <option value="stretch">Stretchtent</option>
-                        <option value="vip">Vip Paviljoen</option>
+                    <div class="dropfill">
+
+                   </div>
                         
                         
                     </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
