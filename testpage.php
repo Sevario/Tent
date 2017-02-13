@@ -267,6 +267,39 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
     </table><br>";
 }?>
 
+<?php if(!empty($_POST['pagodecheck'])) {
+    $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
+            <tr>
+                <td style='border-bottom: 1px solid black;'><b>Product</b></td>
+                <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'></td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>-Pagode- " . $_POST['pagode_maten'] . " </td>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['pagode_aantal'] . " </td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Vloer: " . $_POST['pagode_vloer'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+             <tr>
+                <td style='border-bottom: 1px solid black;'>Toebehoren: " . $_POST['pagode_toeb'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['pagode_vloeren'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['pagode_haringen'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            </table><br>";
+} ;?>
+
 <?php if(!empty($_POST['aluhalcheck'])){
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
         <tr>
@@ -303,7 +336,73 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
         </tr>
 </table><br>";
 };
+?>
 
+<?php if(!empty($_POST['spantentcheck'])){
+    $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
+        <tr>
+            <td style='border-bottom: 1px solid black;'><b>Product</b></td>
+            <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'></td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>-Spantent- " . $_POST['span_lengte'] . " x " . $_POST['span_breedte'] . " meter " . " </td>
+            <td style='border-bottom: 1px solid black;'>1</td>
+        </tr>
+            <td style='border-bottom: 1px solid black;'>Vloer: " . $_POST['span_vloer'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Toebehoren: " . $_POST['span_toeb'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['span_vloeren'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'> " . $_POST['span_haringen'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+</table><br>";
+};
+
+?>
+
+<?php if(!empty($_POST['stretchtentcheck'])){
+    $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
+        <tr>
+            <td style='border-bottom: 1px solid black;'><b>Product</b></td>
+            <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'></td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>-Stretchtent- " . $_POST['stretch_maat'] . " meter " . " </td>
+            <td style='border-bottom: 1px solid black;'>1</td>
+        </tr>
+            <td style='border-bottom: 1px solid black;'>Vloer: " . $_POST['span_vloer'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Toebehoren: " . $_POST['span_toeb'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['span_vloeren'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'> " . $_POST['span_haringen'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+</table><br>";
+};
 
         if ($_POST['nawdrop']==1) { 
             

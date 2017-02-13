@@ -24,6 +24,7 @@
             <div class="checkhide">
                 <label>2. Vloer</label><br>
                 <label>
+                    <input type="hidden" name="pagodecheck" value="5"/>
                     <input class="pagode_vloer" type="checkbox" id="pagode_vlonders"  name="pagode_vloer" value="Vlonders"/>
                     <label class="checkbox" for="pagode_vlonders"><img src="img/vlonders_leveren.svg" /></label>
                     <p>Vlonders</p>
@@ -42,17 +43,17 @@
             <div class="checkhide" style="display: none;" id="pagode_toeb">
                 <label>3. Toebehoren</label><br>
                 <label>
-                    <input class="pagode_toeb" type="checkbox" id="pagode_brandblusser" name="pagode_brandblusser" value="Brandblusser"/>
+                    <input class="pagode_toeb" type="checkbox" id="pagode_brandblusser" name="pagode_toeb" value="Brandblusser"/>
                     <label class="checkbox" for="pagode_brandblusser"><img src="img/brandblusser.svg" /></label>
                     <p>Brandblusser</p>
                 </label>
                 <label>
-                    <input class="pagode_toeb" type="checkbox" id="pagode_noodverlichting" naam="pagode_noodverlichting" value="Noodverlichting"/>
+                    <input class="pagode_toeb" type="checkbox" id="pagode_noodverlichting" name="pagode_toeb" value="Noodverlichting"/>
                     <label class="checkbox" for="pagode_noodverlichting"><img src="img/noodverlichting.svg" /></label>
                     <p>Noodverlichting</p>
                 </label>
                 <label>
-                    <input class="pagode_toeb" type="checkbox" id="pagode_heater" naam=="pagode_heater" value="Heater"/>
+                    <input class="pagode_toeb" type="checkbox" id="pagode_heater" name="pagode_toeb" value="Heater"/>
                     <label class="checkbox" for="pagode_heater"><img src="img/heater.svg" /></label>
                     <p>Heater</p>
                 </label>

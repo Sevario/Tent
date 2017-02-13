@@ -12,18 +12,19 @@
             <div class="matenform">
                 <label>1. Maten (in meters)</label>
                     <br />
-                <select id = "opts" onchange = "showForm()">
+                <select id = "opts" onchange = "showForm()" name="stretch_maat">
                     <option value = "0"></option>
-                    <option value = "1">7.5 x 10</option>
-                    <option value = "2">10 x 12</option>
-                    <option value = "3">10 x 15</option>
-                    <option value = "4">10 x 20</option>
+                    <option value = "7.5 x 10">7.5 x 10</option>
+                    <option value = "10 x 12">10 x 12</option>
+                    <option value = "10 x 15">10 x 15</option>
+                    <option value = "10 x 20">10 x 20</option>
                 </select>
                 </div>
             <div id = "f1" style="display: none" class="checkhide">
 
                 <label>Kleur:</label></br>
                 <label>
+                    <input type="hidden" name="stretchtentcheck" value="7"/>
                     <input type="checkbox" id="platina"  name="fb"/>
                     <label class="checkbox" for="platina"><img src="img/platina.svg" /></label>
                 </label>

@@ -79,11 +79,11 @@
                                 $(".verdwijwhenpressed").hide('fast');
                                 });
                     
-                        $(".formvip").load("ajax/ajax_vip_paviljoen.php");
+                        $(".formspan").load("ajax/ajax_spantent.php");
                     });
                 </script>                    
                 <div class="formadd">
-                <div class="formvip"></div>
+                <div class="formspan"></div>
                 </div>
                 Wilt u <div class="verdwijwhenpressed"> hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
                     of </div> nog een 
