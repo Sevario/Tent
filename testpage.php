@@ -213,7 +213,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
 </table><br>";
 };?>
 
-<?php if(!empty($_POST['wrjigwrig'])) {
+<?php if(!empty($_POST['legercheck'])) {
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <tr>
                 <td style='border-bottom: 1px solid black;'><b>Product</b></td>
@@ -224,27 +224,44 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
                 <td style='border-bottom: 1px solid black;'></td>
             </tr>
             <tr>
-                <td style='border-bottom: 1px solid black;'>-Opslagtent- " . $lengte . " x " . $breedte . " meter " . " </td>
-                <td style='border-bottom: 1px solid black;'>1</td>
+                <td style='border-bottom: 1px solid black;'>-Legertent- " . $_POST['leger_maat'] . " </td>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['leger_aantal'] . " </td>
             </tr>
             <tr>
-                <td style='border-bottom: 1px solid black;'>Zijwanden: " . $_POST['zijwanden'] . " </td>
+                <td style='border-bottom: 1px solid black;'>Vloer: " . $_POST['leger_vloeren'] . " </td>
                 <td style='border-bottom: 1px solid black;'></td>
             </tr>
             <tr>
-                <td style='border-bottom: 1px solid black;'>$deuren</td>
+                <td style='border-bottom: 1px solid black;'>Op/Afbouw: " . $_POST['leger_op_afbouw'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            "; if (!empty($_POST['leger_veldbed'])) {
+        $mail->Body .= " 
+    
+            <tr>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['leger_veldbed'] . " </td>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['veldbedaantal'] . " </td>
+            </tr>
+             "; };
+                 if (!empty($_POST['leger_slaapzak'])) {
+        $mail->Body .= "
+
+             <tr>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['leger_slaapzak'] . " </td>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['slaapzakaantal'] . " </td>
+            </tr>
+            "; };
+    $mail->Body .= "
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Transport: " . $_POST['leger_transport'] . " </td>
                 <td style='border-bottom: 1px solid black;'></td>
             </tr>
             <tr>
-                <td style='border-bottom: 1px solid black;'>$opties</td>
+                <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['leger_ondergrond'] . " </td>
                 <td style='border-bottom: 1px solid black;'></td>
             </tr>
             <tr>
-                <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['ondergrond'] . " </td>
-                <td style='border-bottom: 1px solid black;'></td>
-            </tr>
-            <tr>
-                <td style='border-bottom: 1px solid black;'> " . $_POST['op_haringen'] . " </td>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['leger_haringen'] . " </td>
                 <td style='border-bottom: 1px solid black;'></td>
             </tr>
     </table><br>";
