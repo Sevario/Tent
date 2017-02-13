@@ -261,10 +261,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <td style='border-bottom: 1px solid black;'>$opties</td>
             <td style='border-bottom: 1px solid black;'></td>
         </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'> " . $_POST['op_haringen'] . " </td>
-            <td style='border-bottom: 1px solid black;'></td>
-        </tr>
+
 </table>";
 };
 
