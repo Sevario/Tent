@@ -93,7 +93,7 @@
                         
                     </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>
-            
+                <input type="submit" value="Versturen"/>
         </form>
     </body>
 </html>
