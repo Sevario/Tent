@@ -213,6 +213,44 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
 </table><br>";
 };?>
 
+<h2>Aanvraag details</h2>'?>
+<?php if($_POST['opslagcheck'] == 1) {
+    $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
+            <tr>
+                <td style='border-bottom: 1px solid black;'><b>Product</b></td>
+                <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'></td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>-Opslagtent- " . $lengte . " x " . $breedte . " meter " . " </td>
+                <td style='border-bottom: 1px solid black;'>1</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Zijwanden: " . $_POST['zijwanden'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>$deuren</td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>$opties</td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['ondergrond'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'> " . $_POST['op_haringen'] . " </td>
+                <td style='border-bottom: 1px solid black;'></td>
+            </tr>
+    </table><br>";
+}?>
+
 <?php if(!empty($_POST['aluhalcheck'])){
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
         <tr>
