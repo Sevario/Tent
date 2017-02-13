@@ -284,17 +284,15 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <td style='border-bottom: 1px solid black;'> " . $_POST['alu_haringen'] . " </td>
             <td style='border-bottom: 1px solid black;'></td>
         </tr>
-</table>";
+</table><br>";
 };
 
 
         if ($_POST['nawdrop']==1) { 
             
-$mail->Body .= " <table style='border-collapse: collapse;width: 85%;'>
-        <tr>
-            <td style='border-bottom: 1px solid black;'><b>Product</b></td>
-            <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
-        </tr>
+$mail->Body .= "
+    <h2> Uw Gegevens</h2>
+<table style='border-collapse: collapse;width: 85%;'>
         <tr>
             <td style='border-bottom: 1px solid black;'>Bedrijfsnaam: </td>
             <td style='border-bottom: 1px solid black;'>" . $_POST['bedrijfsnaam'] . "</td>
@@ -335,10 +333,6 @@ $mail->Body .= " <table style='border-collapse: collapse;width: 85%;'>
     }
     else if ($_POST['nawdrop']==2){
     $mail->Body .="<table style='border-collapse: collapse;width: 85%;'>
-            <tr>
-                <td style='border-bottom: 1px solid black;'><b>Product</b></td>
-                <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
-            </tr>
             <tr>
                 <td style='border-bottom: 1px solid black;'>Naam:  </td>
                 <td style='border-bottom: 1px solid black;'>" . $_POST['Naam'] . "</td>
