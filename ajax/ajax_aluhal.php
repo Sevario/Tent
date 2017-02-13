@@ -13,18 +13,18 @@
                 <label>1. Maten</label>
                     <br />
                     <select id='maten' name="alu_breedte">
-                        <option value="breedte" ">Breedte</option>
-                        <option value="6"">6</option>
-                        <option value="8"">8</option>
-                        <option value="10"">10</option>
-                        <option value="12.5"">12.5</option>
-                        <option value="15"">15</option>
-                        <option value="20"">20</option>
-                        <option value="25"">25</option>
+                        <option value="breedte">Breedte</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12.5">12.5</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
                     </select>
                     <select id='maten' name="alu_lengte">
-                        <option value="lengte" ">Lengte</option>
-                        <option value="5" ">5</option>
+                        <option value="lengte">Lengte</option>
+                        <option value="5">5</option>
                         <option value="10">10</option>
                         <option value="15">15</option>
                         <option value="20">20</option>

@@ -76,6 +76,7 @@
                     });
                         $('.nawadd').on("click", function() {
                                 $(".naw").load("naw.php");
+                                $(".verdwijwhenpressed").hide('fast');
                                 });
                     
                         $(".formstretch").load("ajax/ajax_stretchtent.php");
@@ -84,8 +85,8 @@
                 <div class="formadd">
                 <div class="formstretch"></div>
                 </div>
-                Wilt u hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
-                <p>of nog een </p>
+                Wilt u <div class="verdwijwhenpressed"> hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
+                    of </div> nog een 
                     <div class="dropfill">
 
                    </div>
@@ -94,7 +95,6 @@
                     </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>
                 <div class="naw"></div>
-            <input type="submit" value="Versturen"/>
         </form>
     </body>
 </html>

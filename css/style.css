@@ -7,6 +7,9 @@
     display: none;
 }
 
+.dropfill, .verdwijwhenpressed,.drop {
+    display:inline-block;
+}
 
 label:before {
   background-color: white;
