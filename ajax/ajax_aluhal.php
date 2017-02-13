@@ -13,7 +13,7 @@
                 <label>1. Maten</label>
                     <br />
                     <select id='maten'> 
-                        <option value="breete">Breedte</option>
+                        <option value="breedte">Breedte</option>
                         <option value="option1">6</option>
                         <option value="option2">8</option>
                         <option value="option1">10</option>
@@ -50,17 +50,18 @@
             <div class="checkhide">
                 <label>2. Vloer</label><br>
                 <label>
-                    <input class="alu_vloer" type="checkbox" id="alu_vlonders" name="alu_vloeren"/>
-                    <label class="checkbox" for="alu_vlonders"><img src="img/vlonders.svg" /></label>
+                    <input type="hidden" name="aluhalcheck" value="3"/>
+                    <input class="alu_vloer" type="checkbox" id="alu_vlonders" name="alu_vloeren" value="Vlonders"/>
+                    <label class="checkbox" for="alu_vlonders"><img src="img/vlonders_gelegd.svg" /></label>
                     <p>Vlonders</p>
                 </label>
                 <label>
-                    <input class="alu_vloer" type="checkbox" id="alu_systeemvloer" name="alu_vloeren"/>
+                    <input class="alu_vloer" type="checkbox" id="alu_systeemvloer" name="alu_vloeren" value="Systeemvloer"/>
                     <label class="checkbox" for="alu_systeemvloer"><img src="img/systeemvloer.svg" /></label>
                     <p>Systeemvloer</p>
                 </label>
                 <label>
-                    <input class="alu_vloer" type="checkbox" id="alu_geenvloer" name="alu_vloeren"/>
+                    <input class="alu_vloer" type="checkbox" id="alu_geenvloer" name="alu_vloeren" value="Geen"/>
                     <label class="checkbox" for="alu_geenvloer"><img src="img/geen.svg" /></label>
                     <p>Geen Vloer</p>
                 </label>
@@ -68,22 +69,22 @@
             <div class="checkhide" id="alu_opties" style='display: none;'>
                 <label>3. Opties</label><br>
                 <label>
-                    <input class="alu_opties" type="checkbox" id="alu_hardewanden" name="alu_opties"/>
+                    <input class="alu_opties" type="checkbox" id="alu_hardewanden" name="alu_opties" value="Harde wanden"/>
                     <label class="checkbox" for="alu_hardewanden"><img src="img/geen.svg" /></label>
                     <p>Harde Wanden</p>
                 </label>
                 <label>
-                    <input class="alu_opties" type="checkbox" id="alu_glaswand" name="alu_opties"/>
+                    <input class="alu_opties" type="checkbox" id="alu_glaswand" name="alu_opties"value="Glaswand"/>
                     <label class="checkbox" for="alu_glaswand"><img src="img/geen.svg" /></label>
                     <p>Glaswand per meter</p>
                 </label>
                 <label>
-                    <input class="alu_opties" type="checkbox" id="alu_bankirai" name="alu_opties"/>
+                    <input class="alu_opties" type="checkbox" id="alu_bankirai" name="alu_opties" value="Bankirai"/>
                     <label class="checkbox" for="alu_bankirai"><img src="img/geen.svg" /></label>
                     <p>Bankirai Terrastegels</p>
                 </label>
                 <label>
-                    <input class="alu_opties" type="checkbox" id="alu_antraciet" name="alu_opties"/>
+                    <input class="alu_opties" type="checkbox" id="alu_antraciet" name="alu_opties" value="Antraciet"/>
                     <label class="checkbox" for="alu_antraciet"><img src="img/geen.svg" /></label>
                     <p>Antracie Tapijttegels</p>
                 </label>

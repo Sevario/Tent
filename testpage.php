@@ -181,6 +181,10 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
         </tr>
         <tr>
+            <td style='border-bottom: 1px solid black;'></td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
             <td style='border-bottom: 1px solid black;'>-Opslagtent- " . $lengte . " x " . $breedte . " meter " . " </td>
             <td style='border-bottom: 1px solid black;'>1</td>
         </tr>
@@ -213,6 +217,10 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
         </tr>
         <tr>
+            <td style='border-bottom: 1px solid black;'></td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
             <td style='border-bottom: 1px solid black;'>-Festival vloer-</td>
             <td style='border-bottom: 1px solid black;'> " . $_POST['vloer'] . " m2 " . "</td>
         </tr>
@@ -228,9 +236,37 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <td style='border-bottom: 1px solid black;'> " . $_POST['op_haringen'] . " </td>
             <td style='border-bottom: 1px solid black;'></td>
         </tr>
+</table><br>";
+};?>
+
+<?php if($_POST['aluhalcheck'] == 3){
+    $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
+        <tr>
+            <td style='border-bottom: 1px solid black;'><b>Product</b></td>
+            <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'></td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>-Aluhal- " . $lengte . " x " . $breedte . " meter " . " </td>
+            <td style='border-bottom: 1px solid black;'>1</td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Vloer: " . $_POST['alu_vloeren'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>$opties</td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'> " . $_POST['op_haringen'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
 </table>";
 };
-
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
