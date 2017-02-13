@@ -214,7 +214,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
 };?>
 
 <h2>Aanvraag details</h2>
-<?php if($_POST['opslagcheck'] == 1) {
+<?php if(!empty($_POST['wrjigwrig'])) {
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <tr>
                 <td style='border-bottom: 1px solid black;'><b>Product</b></td>
