@@ -213,7 +213,6 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
 </table><br>";
 };?>
 
-<h2>Aanvraag details</h2>
 <?php if(!empty($_POST['wrjigwrig'])) {
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <tr>
