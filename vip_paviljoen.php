@@ -88,7 +88,7 @@
                Wilt u <div class="verdwijwhenpressed"> hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
                     of </div> nog een 
                     <div class="dropfill">
-
+ 
                    </div>
                 
                         
