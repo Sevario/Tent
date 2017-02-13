@@ -12,39 +12,38 @@
             <div class="matenform">
                 <label>1. Maten</label>
                     <br />
-                    <select id='maten'> 
-                        <option value="breedte">Breedte</option>
-                        <option value="option1">6</option>
-                        <option value="option2">8</option>
-                        <option value="option1">10</option>
-                        <option value="option2">12.5</option>
-                        <option value="option1">15</option>
-                        <option value="option2">20</option>
-                        <option value="option1">20</option>
-                        <option value="option2">25</option>
+                    <select id='maten' name="alu_breedte">
+                        <option value="breedte" ">Breedte</option>
+                        <option value="6"">6</option>
+                        <option value="8"">8</option>
+                        <option value="10"">10</option>
+                        <option value="12.5"">12.5</option>
+                        <option value="15"">15</option>
+                        <option value="20"">20</option>
+                        <option value="25"">25</option>
                     </select>
-                    <select id='maten'> 
-                        <option value="lengte">Lengte</option>
-                        <option value="option1">5</option>
-                        <option value="option2">10</option>
-                        <option value="option1">15</option>
-                        <option value="option2">20</option>
-                        <option value="option1">25</option>
-                        <option value="option2">30</option>
-                        <option value="option1">35</option>
-                        <option value="option2">40</option>
-                        <option value="option2">45</option>
-                        <option value="option1">50</option>
-                        <option value="option2">55</option>
-                        <option value="option1">60</option>
-                        <option value="option2">65<option>
-                        <option value="option1">70</option>
-                        <option value="option2">75</option>
-                        <option value="option2">80</option>
-                        <option value="option1">85</option>
-                        <option value="option2">90</option>
-                        <option value="option1">95</option>
-                        <option value="option2">100</option>
+                    <select id='maten' name="alu_lengte">
+                        <option value="lengte" ">Lengte</option>
+                        <option value="5" ">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                        <option value="45">45</option>
+                        <option value="50">50</option>
+                        <option value="55">55</option>
+                        <option value="60">60</option>
+                        <option value="65">65</option>
+                        <option value="70">70</option>
+                        <option value="75">75</option>
+                        <option value="80">80</option>
+                        <option value="85">85</option>
+                        <option value="90">90</option>
+                        <option value="95">95</option>
+                        <option value="100">100</option>
                     </select>
                 </div>
             <div class="checkhide">
@@ -92,17 +91,17 @@
             <div class="checkhide" id="alu_toeb" style='display: none;'>
                 <label>4. Toebehoren</label><br>
                 <label>
-                    <input class="alu_toeb" type="checkbox" id="alu_brandblusser"/>
+                    <input class="alu_toeb" type="checkbox" id="alu_brandblusser" name="alu_toebehoren" value="Brandblusser"/>
                     <label class="checkbox" for="alu_brandblusser"><img src="img/brandblusser.svg" /></label>
                     <p>Brandblusser</p>
                 </label>
                 <label>
-                    <input class="alu_toeb" type="checkbox" id="alu_noodverlichting"/>
+                    <input class="alu_toeb" type="checkbox" id="alu_noodverlichting" ame="alu_toebehoren" value="Noodverlichting"/>
                     <label class="checkbox" for="alu_noodverlichting"><img src="img/noodverlichting.svg" /></label>
                     <p>Noodverlichting</p>
                 </label>
                 <label>
-                    <input class="alu_toeb" type="checkbox" id="alu_heater" name="opties"/>
+                    <input class="alu_toeb" type="checkbox" id="alu_heater" name="opties" ame="alu_toebehoren" value="Heater"/>
                     <label class="checkbox" for="alu_heater"><img src="img/heater.svg" /></label>
                     <p>Heater</p>
                 </label>
@@ -110,17 +109,17 @@
             <div class="checkhide" id="alu_grond" style='display: none;'>
                 <label>5. Ondergrond</label><br>
                 <label>
-                    <input class="alu_grond" type="checkbox" id="alu_stenenstraat" name="alu_ondergrond"/>
+                    <input class="alu_grond" type="checkbox" id="alu_stenenstraat" name="alu_ondergrond" value="Stenen straat"/>
                     <label class="checkbox" for="alu_stenenstraat"><img src="img/tegels.svg" /></label>
                     <p>Stenen Straat</p>
                 </label>
                 <label>
-                    <input class="alu_grond" class="alu_grond" type="checkbox" id="alu_asfalt" name="alu_ondergrond"/>
+                    <input class="alu_grond" class="alu_grond" type="checkbox" id="alu_asfalt" name="alu_ondergrond" value="Asfalt"/>
                     <label class="checkbox" for="alu_asfalt"><img src="img/asfalt.svg" /></label>
                     <p>Asfalt</p>
                 </label>
                 <label>
-                    <input class="alu_grond" type="checkbox" id="alu_gras" name="alu_ondergrond"/>
+                    <input class="alu_grond" type="checkbox" id="alu_gras" name="alu_ondergrond" value="Gras"/>
                     <label class="checkbox" for="alu_gras"><img src="img/gras.svg" /></label>
                     <p>Gras</p>
                 </label>
@@ -130,12 +129,12 @@
                     <p>Grind</p>
                 </label>
                 <label>
-                    <input class="alu_grond" type="checkbox" id="alu_beton" name="alu_ondergrond"/>
+                    <input class="alu_grond" type="checkbox" id="alu_beton" name="alu_ondergrond" value="Beton"/>
                     <label class="checkbox" for="alu_beton"><img src="img/beton.svg" /></label>
                     <p>Beton</p>
                 </label>
                 <label>
-                    <input class="alu_grond" type="checkbox" id="alu_strand" name="alu_ondergrond"/>
+                    <input class="alu_grond" type="checkbox" id="alu_strand" name="alu_ondergrond" value="Strand"/>
                     <label class="checkbox" for="alu_strand"><img src="img/strand.svg" /></label>
                     <p>Strand</p>
                 </label><br>

@@ -16,22 +16,21 @@
 
 //OPSLAGTENT
 
-echo "<h1>Opslag Tent</h1><br>";
 $lengte;
 $breedte;
 if (!empty($_POST['adviescheck'])) {
-    echo "Breedte: " . $_POST['adviesbreedte'];
+//    echo "Breedte: " . $_POST['adviesbreedte'];
     $breedte = $_POST['adviesbreedte'];
-    echo "<br>";
-    echo "Lengte: " . $_POST['advieslengte'] . "<br>";
+//    echo "<br>";
+//    echo "Lengte: " . $_POST['advieslengte'] . "<br>";
     $lengte = $_POST['advieslengte'];
 }
 
  else {
     if ( !empty($_POST['breedte'])) {
 
-        echo "Breedte: " . $_POST['breedte'];
-        echo "<br>";
+//        echo "Breedte: " . $_POST['breedte'];
+//        echo "<br>";
 
         $breedte = $_POST['breedte'];
         
@@ -39,8 +38,8 @@ if (!empty($_POST['adviescheck'])) {
 
     if ( !empty($_POST['lengte'])) {
 
-        echo "Lengte: " . $_POST['lengte'];
-        echo "<br>";
+//        echo "Lengte: " . $_POST['lengte'];
+//        echo "<br>";
         
         $lengte = $_POST['lengte'];
     }   
@@ -49,7 +48,7 @@ if (!empty($_POST['adviescheck'])) {
 
 if ( !empty($_POST['zijwanden'])) {
     
-    echo "Zijwanden: " . $_POST['zijwanden'] . "<br>";
+//    echo "Zijwanden: " . $_POST['zijwanden'] . "<br>";
 }
 
 
@@ -82,7 +81,7 @@ if (!empty($_POST['geendeur'])) {
         
 }
 if ($deuren != "Deuren: "){
-echo $deuren . "<br>";
+//echo $deuren . "<br>";
 }
 //OPTIES CHECK
 $opties  = "Opties: ";
@@ -101,46 +100,21 @@ if ( !empty($_POST['geenopties'])) {
 }
 
 if ($opties != "Opties: ") {
-echo $opties . "<br>";
+//echo $opties . "<br>";
 }
 
 
 if ( !empty($_POST['ondergrond'])) {
     
-    echo "Ondergrond: " . $_POST['ondergrond'];
+//    echo "Ondergrond: " . $_POST['ondergrond'];
     
 }
 if (!empty($_POST['op_haringen'])) {
-    echo "<br> Er kunnen geen haringen geslagen worden.";
+//    echo "<br> Er kunnen geen haringen geslagen worden.";
 }
 //Festival vloer
 
-echo "<h1>Festival vloer</h1><br>";
-if (!empty($_POST['vloer'])) {
-    echo "Vlonders: " . $_POST['vloer'] . " m²" . "<br>";
-}
 
-if ( !empty($_POST['leggen'])) {
-
-    echo "Leggen: " . $_POST['leggen'] . "<br>";
-
-}
-
-if ( !empty($_POST['transport'])) {
-
-    echo "Transport: " . $_POST['transport'] . "<br>";
-
-}
-
-if ( !empty($_POST['straat'])) {
-
-    echo "Ondergrond: " . $_POST['straat'];
-
-}
-
-if (!empty($_POST['op_haringen'])) {
-    echo "<br> Er kunnen geen haringen geslagen worden.";
-}
 
 require 'PHPMailer-master\PHPMailerAutoload.php';
 
@@ -152,13 +126,13 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.live.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'peterderoos@live.nl';                 // SMTP username
-$mail->Password = 'P1eter23';                           // SMTP password
+$mail->Username = 'peterphptester@hotmail.com';                 // SMTP username
+$mail->Password = 'P1phptester';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;
 //$mail->SMTPDebug = 1;
 
-$mail->setFrom('peterderoos@live.nl', 'Mailer');
+$mail->setFrom('peterphptester@hotmail.com', 'Mailer');
 $mail->addAddress('daermaethortest@hotmail.com', 'Joe User');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -174,7 +148,7 @@ $mail->Body    = '<div id="geheel" style="background-color: #f3f6fa;border: 1px 
                     <div id="logo" style="background-color: black;font-size: 2.4em;border: 1px solid transparent;border-radius: 5px 5px 0 0;padding-left: 30px; padding-right: 5px;padding-top: 5px;padding-bottom: 5px;"><b style="color: white">DONSELAAR</b><b style="color: #a4d042;">TENTEN</b></div>
                      <h1>Bedankt voor uw aanvraag</h1><br>
                      Wij nemen zo spoedig mogelijk contact met u op.
-                     <h2>Aanvraag details</h2>'?> <?php if($_POST['opslagcheck'] == 1){
+                     <h2>Aanvraag details</h2>'?> <?php if(!empty($_POST['opslagcheck'])){
 $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
         <tr>
             <td style='border-bottom: 1px solid black;'><b>Product</b></td>
@@ -210,7 +184,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
         </tr>
 </table><br>";
 };?>
-<?php if($_POST['festivalcheck'] == 2){
+<?php if(!empty($_POST['festivalcheck'])){
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
         <tr>
             <td style='border-bottom: 1px solid black;'><b>Product</b></td>
@@ -239,7 +213,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
 </table><br>";
 };?>
 
-<?php if($_POST['aluhalcheck'] == 3){
+<?php if(!empty($_POST['aluhalcheck'])){
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
         <tr>
             <td style='border-bottom: 1px solid black;'><b>Product</b></td>
@@ -250,7 +224,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <td style='border-bottom: 1px solid black;'></td>
         </tr>
         <tr>
-            <td style='border-bottom: 1px solid black;'>-Aluhal- " . $lengte . " x " . $breedte . " meter " . " </td>
+            <td style='border-bottom: 1px solid black;'>-Aluhal- " . $_POST['alu_lengte'] . " x " . $_POST['alu_breedte'] . " meter " . " </td>
             <td style='border-bottom: 1px solid black;'>1</td>
         </tr>
         <tr>
@@ -258,10 +232,21 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <td style='border-bottom: 1px solid black;'></td>
         </tr>
         <tr>
-            <td style='border-bottom: 1px solid black;'>$opties</td>
+            <td style='border-bottom: 1px solid black;'>Opties: " . $_POST['alu_opties'] . " </td>
             <td style='border-bottom: 1px solid black;'></td>
         </tr>
-
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Toebehoren: " . $_POST['alu_toebehoren'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'>Ondergrond: " . $_POST['alu_ondergrond'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
+        <tr>
+            <td style='border-bottom: 1px solid black;'> " . $_POST['alu_haringen'] . " </td>
+            <td style='border-bottom: 1px solid black;'></td>
+        </tr>
 </table>";
 };
 
@@ -380,7 +365,7 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'Message has been sent';
+    echo 'Uw aanvraag is succesvol verstuurd naar het ingevulde emailadres';
 }
 ?>
 </body>
