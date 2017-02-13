@@ -84,7 +84,6 @@
                 <div class="formopslag"></div>
                 </div>
                 Wilt u hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
-                <div class="naw"></div>
                 <p>of nog een </p>
                     <div class="dropfill">
 
@@ -93,6 +92,7 @@
                         
                     </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>
+                <div class="naw"></div>
                 <input type="submit" value="Versturen"/>
         </form>
     </body>
