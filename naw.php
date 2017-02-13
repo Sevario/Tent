@@ -1,22 +1,17 @@
-<html>
-<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <script src="js/jquery.js"></script>
     <script src="js/tent.js"></script>
-    <title></title>
-</head>
-<body>
+
         <h1>NAW-gegevens</h1>
-    <form action="action_page.php">
         <div class="naw">
             <label>Bedrijf of particulier</label>
             <br />
-            <select id = "opts" onchange = "showForm()">
-                <option value = "0" name="nawdrop"></option>
-                <option value = "1" name="nawdrop">Bedrijf</option>
-                <option value = "2" name="nawdrop">Particulier</option>
+            <select id = "opts" onchange = "showForm()" name="nawdrop">
+                <option value = "0" ></option>
+                <option value = "1" >Bedrijf</option>
+                <option value = "2" >Particulier</option>
             </select>
         </div>
         <div id = "f1" style="display: none"><br>
@@ -25,19 +20,19 @@
             <label>Contactpersoon:</label>
             <input type="text" name="Contactpersoon"><br>
             <label>Adres:</label>
-            <input type="text" name="Adres"><br>
+            <input type="text" name="bedAdres"><br>
             <label>Postcode:</label>
-            <input type="text" name="Postcode"><br>
+            <input type="text" name="bedPostcode"><br>
             <label>Plaats:</label>
-            <input type="text" name="Plaats"><br>
+            <input type="text" name="bedPlaats"><br>
             <label>Land:</label>
-            <input type="text" name="Land"><br>
+            <input type="text" name="bedLand"><br>
             <label>Tel.nr:</label>
-            <input type="text" name="Tel.nr"><br>
+            <input type="text" name="bedTelnr"><br>
             <label>Tel.nr mobiel:</label>
-            <input type="text" name="Mobiel.nr"><br>
+            <input type="text" name="bedMobielnr"><br>
             <label>Email:</label>
-            <input type="text" name="Email"><br>
+            <input type="text" name="bedEmail"><br>
         </div>
         <div id = "f2" style="display: none"><br>
             <label>Naam:</label>
@@ -51,9 +46,9 @@
             <label>Land:</label>
             <input type="text" name="Land"><br>
             <label>Tel.nr:</label>
-            <input type="text" name="Tel.nr"><br>
+            <input type="text" name="Telnr"><br>
             <label>Tel.nr mobiel:</label>
-            <input type="text" name="Mobiel.nr"><br>
+            <input type="text" name="Mobielnr"><br>
             <label>Email:</label>
             <input type="text" name="Email"><br>
             <label>Afleveradres</label><br>
@@ -66,6 +61,3 @@
             <label>Land:</label>
             <input type="text" name="Land2"><br>
         </div>
-    </form>
-</body>
-</html>
