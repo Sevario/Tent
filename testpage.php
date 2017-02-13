@@ -213,7 +213,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
 </table><br>";
 };?>
 
-<h2>Aanvraag details</h2>'?>
+<h2>Aanvraag details</h2>
 <?php if($_POST['opslagcheck'] == 1) {
     $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
             <tr>
@@ -291,7 +291,7 @@ $mail->Body .= "<table style='border-collapse: collapse;width: 85%;'>
 
         if ($_POST['nawdrop']==1) { 
             
-$mail->body .=" <table style='border-collapse: collapse;width: 85%;'>
+$mail->Body .= " <table style='border-collapse: collapse;width: 85%;'>
         <tr>
             <td style='border-bottom: 1px solid black;'><b>Product</b></td>
             <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
@@ -302,97 +302,97 @@ $mail->body .=" <table style='border-collapse: collapse;width: 85%;'>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Contactpersoon: </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Contactpersoon'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedContactpersoon'] . "</td>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Adres:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Adres'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedAdres'] . "</td>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Postcode:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Postcode'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedPostcode'] . "</td>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Plaats:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Plaats'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedPlaats'] . "</td>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Land:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Land'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedLand'] . "</td>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Telefoon Nummer:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Tel.nr'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedTelnr'] . "</td>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Mobiel Nummer:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Mobiel.nr'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedMobielnr'] . "</td>
         </tr>
         <tr>
             <td style='border-bottom: 1px solid black;'>Email:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Email'] . "</td>
+            <td style='border-bottom: 1px solid black;'>" . $_POST['bedEmail'] . "</td>
         </tr>
     </table>";
     }
     else if ($_POST['nawdrop']==2){
-$mail->body .="<table style='border-collapse: collapse;width: 85%;'>
-        <tr>
-            <td style='border-bottom: 1px solid black;'><b>Product</b></td>
-            <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Naam:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Naam'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Adres:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Adres'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Postcode:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Postcode'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Plaats:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Plaats'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Land:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Land'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Telefoon Nummer:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Tel.nr'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Mobiel Nummer:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Mobiel.nr'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Email:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Email'] . "</td>
-        </tr>
-        ";
-        if ($_POST['check1'] == 1) {
-$mail->body .= "
-         <tr>
-         <td><b>Afwijkend Adres</td>
-         <td></td>
-         </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Adres:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Adres2'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Plaats:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Plaats2'] . "</td>
-        </tr>
-        <tr>
-            <td style='border-bottom: 1px solid black;'>Land:  </td>
-            <td style='border-bottom: 1px solid black;'>" . $_POST['Land2'] . "</td>
-        </tr>
-       
-        </table>";
+    $mail->Body .="<table style='border-collapse: collapse;width: 85%;'>
+            <tr>
+                <td style='border-bottom: 1px solid black;'><b>Product</b></td>
+                <td style='border-bottom: 1px solid black;width: 50px;'><b>Aantal</b></td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Naam:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Naam'] . "</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Adres:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Adres'] . "</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Postcode:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Postcode'] . "</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Plaats:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Plaats'] . "</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Land:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Land'] . "</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Telefoon Nummer:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Telnr'] . "</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Mobiel Nummer:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Mobielnr'] . "</td>
+            </tr>
+            <tr>
+                <td style='border-bottom: 1px solid black;'>Email:  </td>
+                <td style='border-bottom: 1px solid black;'>" . $_POST['Email'] . "</td>
+            </tr>
+            ";
+            if ($_POST['check1'] == 1) {
+             $mail->Body .= "
+                 <tr>
+                 <td><b>Afwijkend Adres</td>
+                 <td></td>
+                 </tr>
+                <tr>
+                    <td style='border-bottom: 1px solid black;'>Adres:  </td>
+                    <td style='border-bottom: 1px solid black;'>" . $_POST['Adres2'] . "</td>
+                </tr>
+                <tr>
+                    <td style='border-bottom: 1px solid black;'>Plaats:  </td>
+                    <td style='border-bottom: 1px solid black;'>" . $_POST['Plaats2'] . "</td>
+                </tr>
+                <tr>
+                    <td style='border-bottom: 1px solid black;'>Land:  </td>
+                    <td style='border-bottom: 1px solid black;'>" . $_POST['Land2'] . "</td>
+                </tr>
+
+                </table>";
         }
     }
     

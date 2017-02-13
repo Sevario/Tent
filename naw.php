@@ -18,7 +18,7 @@
             <label>Bedrijfsnaam:</label>
             <input type="text" name="bedrijfsnaam"><br>
             <label>Contactpersoon:</label>
-            <input type="text" name="Contactpersoon"><br>
+            <input type="text" name="bedContactpersoon"><br>
             <label>Adres:</label>
             <input type="text" name="bedAdres"><br>
             <label>Postcode:</label>
