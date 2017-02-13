@@ -12,5 +12,5 @@
     <a href="pagode.php">Pagode</a><br>
     <a href="spantent.php">Span Tent</a><br>
     <a href="stretchtent.php">Stretch Tent</a><br>
-    <a href="vip paviljoen.php">Vip Paviljoen</a><br>
+    <a href="vip_paviljoen.php">Vip Paviljoen</a><br>
 </body>

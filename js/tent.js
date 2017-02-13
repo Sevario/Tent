@@ -8,16 +8,25 @@ $(document).ready(function() {
     $('#maten').change(function () {
         var selected = $('#maten option:selected').text();
         if (selected !== "") {
-            $('.aantal').show('fast');
+            $('.aantaldiv').show('fast');
         }
         else {
-            $('.aantal').hide('fast');
+            $('.aantaldiv').hide('fast');
         }
         
     
     });
     
     //Opslagtent
+    
+    $('input#leger_veldbed').on('change', function() {
+        $('.inputveldbed').show('fast');
+    });
+    
+    $('input#leger_slaapzak').on('change', function() {
+        $('.inputslaapzak').show('fast');
+    });
+    
     
     //Show 3 when 2 is selected
     $('input.opslagwanden').on('change', function() {

@@ -58,12 +58,12 @@
                 <label>
                     <input class="legertoeb" type="checkbox" id="leger_veldbed"/>
                     <label class="checkbox" for="leger_veldbed"><img src="img/veldbed.svg" /></label>
-                    <p>Veldbed</p>
+                    <p>Veldbed<input class="inputveldbed" type="text" name="veldbedaantal" style="display: none;width:50px;"/></p>
                 </label>
                 <label>
                     <input class="legertoeb" type="checkbox" id="leger_slaapzak"/>
                     <label class="checkbox" for="leger_slaapzak"><img src="img/slaapzak.svg" /></label>
-                    <p>Slaapzak</p>
+                    <p>Slaapzak<input class="inputslaapzak" type="text" name="slaapzakaantal" style="display: none;width:50px;"/></p>
                 </label>
             </div>
             <div class="checkhide" id="legertransport" style='display: none;'>

@@ -74,7 +74,9 @@
                           
 
                     });
-                    
+                        $('.nawadd').on("click", function() {
+                                $(".naw").load("naw.php");
+                                });
                     
                         $(".formfestival").load("ajax/ajax_festival_vloer.php");
                     });
@@ -82,13 +84,13 @@
                 <div class="formadd">
                 <div class="formfestival"></div>
                 </div>
-                
-                
-                Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een 
+                Wilt u hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
+                <div class="naw"></div>
+                <p>of nog een </p>
                     <div class="dropfill">
 
                    </div>
-                        
+                
                         
                     </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>

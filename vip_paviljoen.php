@@ -74,29 +74,23 @@
                           
 
                     });
+                    $('.nawadd').on("click", function() {
+                                $(".naw").load("naw.php");
+                                });
                     
-                    
-                        $(".formaluhal").load("ajax/ajax_aluhal.php");
+                        $(".formvip").load("ajax/ajax_vip_paviljoen.php");
                     });
                 </script>                    
                 <div class="formadd">
-                <div class="form1"></div>
+                <div class="formvip"></div>
                 </div>
+                Wilt u hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
+                <div class="naw"></div>
+                <p>of nog een </p>
+                    <div class="dropfill">
+
+                   </div>
                 
-                
-                Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een 
-                
-                    <select class="dropdownmenu">
-                        <option>Selecteer de nieuwe tent</option>
-                        <option value='opslag'>Opslagtent</option>
-                        <option value='festival'>Festival Vloer</option>
-                        <option value='leger'>Legertent</option>
-                        <option value="aluhal">Aluhal</option>
-                        <option value="pagode">Pagode</option>
-                        <option value="span">Spantent</option>
-                        <option value="stretch">Stretchtent</option>
-                        <option value="vip">Vip Paviljoen</option>
-                        
                         
                     </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>

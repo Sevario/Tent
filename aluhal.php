@@ -74,7 +74,9 @@
                           
 
                     });
-                    
+                        $('.nawadd').on("click", function() {
+                                $(".naw").load("naw.php");
+                                });
                     
                         $(".formaluhal").load("ajax/ajax_aluhal.php");
                     });
@@ -82,13 +84,14 @@
                 <div class="formadd">
                 <div class="formaluhal"></div>
                 </div>
-                
-                
-                Wilt u hem zo <input type="submit" name="versturen" value="versturen"/> of nog een 
-                
-                        <div class="dropfill">
+                Wilt u hem zo <button class="nawadd" type="button" value="versturen">Versturen</button>
+                <div class="naw"></div>
+                <p>of nog een </p>
+                    <div class="dropfill">
 
-                          </div>
+                   </div>
+                
+                        
                     </select> <button class="newtent" type="button">toevoegen</button><div class="drop"></div>?
                 </label>
             
